@@ -1,0 +1,22 @@
+{
+  "name": "NiceTable",
+  "version": "0.1.0",
+  "summary": "A nice wrapper for TableView and CollectionView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/frizeiro/nice-table",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Felipe Frizeiro": "felipefrizeiro@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/frizeiro/nice-table.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "NiceTable/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module NiceTable {
+  umbrella header "NiceTable-umbrella.h"
+
+  export *
+  module * { export * }
+}

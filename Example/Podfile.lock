@@ -1,0 +1,16 @@
+PODS:
+  - NiceTable (0.1.0)
+
+DEPENDENCIES:
+  - NiceTable (from `../`)
+
+EXTERNAL SOURCES:
+  NiceTable:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NiceTable: eedb25ae14e42e72cb61fcc54a7e45e15a18a134
+
+PODFILE CHECKSUM: 2ba6a3f142ddfbb90e463d2828ee93971927453f
+
+COCOAPODS: 1.12.0
