@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import NiceTable
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NiceTableViewController()
         // Do any additional setup after loading the view, typically from a nib.
     }
 

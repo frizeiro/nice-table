@@ -1,6 +1,6 @@
 //
 //  NiceButtonItem.swift
-//  Biblia
+//  NiceTable
 //
 //  Created by Felipe Frizeiro on 02/10/20.
 //  Copyright © 2020 Felipe Frizeiro. All rights reserved.

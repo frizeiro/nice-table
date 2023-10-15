@@ -30,11 +30,12 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'NiceTable/Classes/**/*'
+  s.source_files = 'NiceTable/Sources/**/*'
+  s.resources = 'NiceTable/Resources/**/*'
   
-  # s.resource_bundles = {
-  #   'NiceTable' => ['NiceTable/Assets/*.png']
-  # }
+#  s.resource_bundles = {
+#      'NiceTable' => ['NiceTable/Resources/**/*']
+#  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
