@@ -20,7 +20,7 @@ open class NiceTableCell: UITableViewCell {
         return Self.reuseIdentifier
     }
     
-    public func setup(_ item: NiceTableItem) {
+    open func setup(_ item: NiceTableItem) {
         fatalError("\(type(of: self)).setup() needs to be overwritten.")
     }
     
