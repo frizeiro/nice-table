@@ -12,7 +12,10 @@ public struct NiceSectionStyle {
     
     public static let shared = NiceSectionStyle()
     
-    public var height: CGFloat = 40
-    public var isHidden: Bool = false
+    public var headerHeight: CGFloat = 40
+    public var footerHeight: CGFloat = 20
+    
+    public var isHeaderHidden: Bool = false
+    public var isFooterHidden: Bool = true
     
 }

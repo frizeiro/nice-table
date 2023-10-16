@@ -41,6 +41,10 @@ open class NiceTableView: NiceKeyboardAvoidingTableView {
     private func commonInit() {
         dataSource = self
         delegate = self
+        
+        if #available(iOS 15.0, *) {
+            sectionHeaderTopPadding = .invisible
+        }
     }
     
     // MARK: - Public Methods
@@ -104,8 +108,28 @@ extension NiceTableView: UITableViewDataSource {
         return sections[section].footer
     }
     
+    public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        let style = sections[section].style
+        return style.isHeaderHidden ? .invisible : style.headerHeight
+    }
+    
     public func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return sections[section].footer == nil ? 0 : UITableView.automaticDimension
+        let style = sections[section].style
+        return style.isFooterHidden ? .invisible : style.footerHeight
+    }
+    
+    open override func footerView(forSection section: Int) -> UITableViewHeaderFooterView? {
+        let a = UITableViewHeaderFooterView()
+        a.backgroundView = UIView()
+        a.backgroundColor = .red
+        return a
+    }
+    
+    open override func headerView(forSection section: Int) -> UITableViewHeaderFooterView? {
+        let a = UITableViewHeaderFooterView()
+        a.backgroundView = UIView()
+        a.backgroundColor = .blue
+        return a
     }
     
 }

@@ -19,8 +19,11 @@ open class NiceCollectionSection {
     
     // MARK: - Life Cycle
     
-    public init(_ items: [NiceCollectionItem], title: String? = nil, style: NiceSectionStyle = .shared) {
-        
+    public init(
+        _ items: [NiceCollectionItem],
+        title: String? = nil,
+        style: NiceSectionStyle = .shared
+    ) {
         self.items = items
         self.title = title
         self.style = style

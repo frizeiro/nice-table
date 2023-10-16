@@ -173,8 +173,14 @@ extension NiceCollectionView: UICollectionViewDataSource {
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         let style = sections[section].style
-        let height = CGSize(width: collectionView.frame.width, height: style.height)
-        return style.isHidden ? .zero : height
+        let height = CGSize(width: collectionView.frame.width, height: style.headerHeight)
+        return style.isHeaderHidden ? .zero : height
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+        let style = sections[section].style
+        let height = CGSize(width: collectionView.frame.width, height: style.footerHeight)
+        return style.isFooterHidden ? .zero : height
     }
     
 }
