@@ -80,6 +80,9 @@ open class NiceTableView: NiceKeyboardAvoidingTableView {
         return indexPath.section == sections.count - 1 && indexPath.row == sections[indexPath.section].items.count - 1
     }
     
+    private func style(for section: Int) -> NiceSectionStyle {
+        return sections[section].style
+    }
 }
 
 extension NiceTableView: UITableViewDataSource {
@@ -101,35 +104,23 @@ extension NiceTableView: UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return sections[section].title
+        let style = style(for: section)
+        return style.isHeaderHidden ? nil : sections[section].title
     }
     
     public func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-        return sections[section].footer
+        let style = style(for: section)
+        return style.isFooterHidden ? nil : sections[section].footer
     }
     
     public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        let style = sections[section].style
+        let style = style(for: section)
         return style.isHeaderHidden ? .invisible : style.headerHeight
     }
     
     public func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        let style = sections[section].style
+        let style = style(for: section)
         return style.isFooterHidden ? .invisible : style.footerHeight
-    }
-    
-    open override func footerView(forSection section: Int) -> UITableViewHeaderFooterView? {
-        let a = UITableViewHeaderFooterView()
-        a.backgroundView = UIView()
-        a.backgroundColor = .red
-        return a
-    }
-    
-    open override func headerView(forSection section: Int) -> UITableViewHeaderFooterView? {
-        let a = UITableViewHeaderFooterView()
-        a.backgroundView = UIView()
-        a.backgroundColor = .blue
-        return a
     }
     
 }

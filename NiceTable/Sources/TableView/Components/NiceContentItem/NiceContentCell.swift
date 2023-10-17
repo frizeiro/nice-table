@@ -59,7 +59,7 @@ public class NiceContentCell: NiceTableCell {
         case .inline:
             masterStackView?.axis = .horizontal
             masterStackView?.alignment = .top
-            masterStackView?.distribution = .fillEqually
+            masterStackView?.distribution = .fillProportionally
             textFooterStackView?.alignment = .trailing
         case .topDown:
             masterStackView?.axis = .vertical
