@@ -7,141 +7,147 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04E10C214DAF71BB3F8F8B9B94F719D2 /* NiceTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B40AC8E33DEE2D3D596961EE7AA8DA /* NiceTableView.swift */; };
-		05206501CE3E575B2DB4BBEBE75F14A6 /* NiceCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B395A7D0D437EFFAF7F2E189202E61B /* NiceCollectionViewController.xib */; };
+		081833AF858DF921759EB86D600037DC /* NiceButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32037F5B24DE21DD6157C9ECCE45DD3C /* NiceButtonCell.swift */; };
 		0923AB691E8156051233FBAAD7B46C9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		09743CFC785D1051C4D47D4ED1264900 /* CGFloat+Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5D69AC309D8B769AA32867F6DB2952 /* CGFloat+Support.swift */; };
-		09835CE08F1031069DACC1D12FD642A8 /* NiceCollectionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBDB4BA68F279210DEA6405A7710A82 /* NiceCollectionSection.swift */; };
-		0C2CF95B38D4B3C2B8CC6F10D6D0BCA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		1D690AE7C9409B2B8A98E64EDD8FA044 /* NiceCollectionItemSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E7B48257CA6044CCB4B8E82543A5A /* NiceCollectionItemSize.swift */; };
-		1F6251A9DF60AD7D7EA89B8459B781E6 /* NiceContentItemRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788675FC552774554442D311F8FD97C4 /* NiceContentItemRepresentable.swift */; };
-		2017E101D88E90BB2963D1E8D16AC501 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B7E141E483038C1CD2279944ED6D8C /* UIView+Border.swift */; };
-		21AD65BDCBE9C3D8C78BD9DC2F45EE15 /* NiceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51AD7535C07D6386A927EAFA844FBF1 /* NiceTableViewController.swift */; };
-		26FA9E8614B53A53B951B84CDC4AAADE /* NiceButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E92384BE8C44A1FFC59127C7CAB83A /* NiceButtonCell.xib */; };
+		18E5515BA938151DA0E466461248FADD /* NiceTableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3565ED856F21DC3EB6C99673AEE77384 /* NiceTableItem.swift */; };
+		1AE39FA76E5B39D35C93A3DADDE45075 /* NiceContentItemDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5465E3D3ACA49615938AE8E9D565637 /* NiceContentItemDescription.swift */; };
+		1B54DDB9D976F2A7987C2F6D6BB7A14B /* NiceKeyboardAvoidingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B441040839D193B4F6D22AAA53A762 /* NiceKeyboardAvoidingTableView.swift */; };
+		219F2DD80A2AD780642BC26221EF92FD /* NiceCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE84960CC4F144E28CD4A76BC60BCBF /* NiceCollectionCell.swift */; };
+		2632BFD8786DC54B431A5D24606CFBBC /* NiceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2897BDD923D3EACCCF25A5ED3A047050 /* NiceTableViewController.swift */; };
+		2772A0C30CDB5137623AC979F71DF944 /* NiceTable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D740F3FB42BA728D2E90E050A6BAA8A /* NiceTable-dummy.m */; };
 		282A8430640917AC2FD8A851E4276984 /* Pods-NiceTable_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1FEB9C0E97EC3348F0A131A01E22B62 /* Pods-NiceTable_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D769C4FFC52651074D3A92AEF7F8E48 /* NiceTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9FD41594D566E5B3E4E541B4B90CA9 /* NiceTableViewController.xib */; };
-		4A5DBAD8816EFF84950DEFC84C449964 /* NiceContentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95686B07A0479A4ED1C652A6F6735486 /* NiceContentItem.swift */; };
-		4B7AE30DCDE913894EF1F7B0018A3F7C /* NiceTableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE1C12E2AE1B25D449F01AB981959B4 /* NiceTableSection.swift */; };
-		4FABC14050A0050DACC1EC4BD07F261D /* NiceContentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85DA39269F744D669B17B13F3D88144 /* NiceContentStyle.swift */; };
-		5152978BDF4FD3AE77A134370F5C6A3A /* NiceTable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02205BA80BEEA9B63425864300927352 /* NiceTable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62A82E03E7355F0326A8821B81A5D38C /* NiceButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B322A908415964F912106E7809A8A54 /* NiceButtonItem.swift */; };
-		638624871EA65E79EAB8EF7DC7B06384 /* NiceLookupItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EC96BDAFCA842A5ABF17622EA9B024 /* NiceLookupItem.swift */; };
-		6BD0B11D3F7E7F8E410C0F3564C172B0 /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6A0A61F5E6517B3C29C1E76127BBBA /* UIView+Nib.swift */; };
-		6BE22A1BDF5278A705D21D9D44B86363 /* NiceTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CEE22A73D16ABFF41C91C9156AF73BA /* NiceTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E5FB20DB79ECC7F28E44E94F965B0B8 /* NiceContentAccessoryStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50837AE673356F6404F48282B16F4CAC /* NiceContentAccessoryStyle.swift */; };
+		2EBD4C627A6CBE272EE4F19712408C2A /* CGFloat+Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9A2CEC4B85DF16B4F1FBF3457D72DB /* CGFloat+Support.swift */; };
+		32E6F1A51577BA31B46FD4087F948CE5 /* NiceContentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F6265B4E4693101A5DA0DB185B83F4 /* NiceContentItem.swift */; };
+		41D9AF59EFF8965F87892D1408CEDBF2 /* NiceCollectionLoadMoreItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641CBDFDF77F91D52260FF10C9F0ABD5 /* NiceCollectionLoadMoreItemCell.swift */; };
+		4483D00F345E7C38B044447EBC06D03B /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7431DEF8194CCCF2323E57CB9858FEA /* UIView+Border.swift */; };
+		45C9B8E85CF95ABE92881ABDFE782080 /* NiceButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED232B998692601B3B8E48B0ED0DD75 /* NiceButtonItem.swift */; };
+		4CF364C8423C5BF1139E3B0888985BCC /* NiceTable.h in Headers */ = {isa = PBXBuildFile; fileRef = A483BC2D776B9DF071001925844BD8DC /* NiceTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55170FFB78574094671DCFF9B0D0B68C /* UIView+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5953D9934A467BB5435612F80A42F14B /* UIView+CornerRadius.swift */; };
+		642873AA84649CD80A2D8BB14C7D6170 /* UICollectionView+ScrollTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016388629DBC6CDAAFDFBCB2690949B6 /* UICollectionView+ScrollTo.swift */; };
+		6707D8A84B3ADA8C3D3502CC97F78549 /* NiceContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21885F1CE699B6C19A2F98A1DF900E7 /* NiceContentCell.swift */; };
+		6AE70FB10D9539EB63C5982F85D6828F /* NiceLookupItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5DCF115054D7B978F5EA2D84EF898A /* NiceLookupItem.swift */; };
+		72FC396F31BB983C6D36241093BF3B1F /* NiceCollectionItemSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40982AE300F75BEAE37FA7C4542C4950 /* NiceCollectionItemSize.swift */; };
+		73403EFC910ABD16D77370A0C195A94A /* NiceButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B94EA997CC51099FF2A739216D86C1D /* NiceButtonCell.xib */; };
 		7353FD95EA40D8CB873850B7987E0E88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		78D8A8442729C632BD2B6E844338672A /* NiceCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99485D6175607A620954B186D76773D8 /* NiceCollectionView.swift */; };
-		7A9C3EBD0C44F677A376B966B54451BD /* NiceCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50EF7C744FE2B789BBC698DF6E465479 /* NiceCollectionHeaderView.xib */; };
-		810518E6F5935763EFEB981864138437 /* NiceCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E85857CA3CD28820B937177C68802D8 /* NiceCollectionHeaderView.swift */; };
-		8FEA6CE0E4FE6B60E689A407061011FD /* NiceTable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DCA0A86B142C849D687B5DE28F040B /* NiceTable-dummy.m */; };
-		91D80A5823217699C1A158E165BC5351 /* NiceTableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E6BF9395C4DD9C97288814FACD0ACD /* NiceTableItem.swift */; };
-		92CF45925EAB8EBF8EEA3516D59CD1DA /* NiceCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729BC03132C53F8EA221ED16C193E2FE /* NiceCollectionCell.swift */; };
-		932ADB2A998A04708545B3E57908F4B5 /* NiceKeyboardAvoidingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D7FE513916B5421FF7C08CDAD7CC6 /* NiceKeyboardAvoidingTableView.swift */; };
-		959720D18D573E9017977DDAF1C53882 /* UICollectionView+ScrollTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA522AEF89C8DB2FEDDD6AF121753FF2 /* UICollectionView+ScrollTo.swift */; };
-		96633769376BB354D26E0E58AE0E1E30 /* NiceButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE95DB0C0DBF3557A1EF53B1000ECC9 /* NiceButtonCell.swift */; };
-		97766A5E802133D7AD886FAB99F5D493 /* NiceCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E66CE145A9422A7FF3505FC2FF2C26 /* NiceCollectionViewController.swift */; };
+		742742B6D4A3A0D4311A065777A7BB73 /* NiceCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F5682B7A6A170CD472AC80F46D7B1 /* NiceCollectionHeaderView.swift */; };
+		77558A7832F2374E62334359E5DB30EB /* NiceCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9626FEA8B05179640149125113C5E5B /* NiceCollectionView.swift */; };
+		83F0414F5E1020FF8FF672D6FA3F45F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		83FB29C3246A10D76FDA9AD257697420 /* NiceCollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D97CA2A2607E574DBA6468B0246306F /* NiceCollectionItem.swift */; };
+		885194C0057CE7A56B09F41066DBB53E /* NiceCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBAE747916FD2256DF8C57AA8905FE8 /* NiceCollectionViewController.swift */; };
+		8E21FA37645C508CB10E261209D0F61B /* NiceCollectionLoadMoreItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90BE45F8620452B60EDF6E66434405E5 /* NiceCollectionLoadMoreItemCell.xib */; };
+		8FBECA2B1E5AB5E83FBA5F13411A55BB /* NiceTable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3C6FCBD382A3E5B62AC0BED802C8F6E /* NiceTable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A2D472E9CB6BDC688BEE48016A4FD62 /* NiceCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99CA6A8D2BE6C14D83CF54D38FD44DB1 /* NiceCollectionHeaderView.xib */; };
 		9D88F0C1E273A06810D6C45D4560410C /* Pods-NiceTable_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F454F470B0D7A73F09BE096AEA1C1D2 /* Pods-NiceTable_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A529BD9C839ADD628E0F5D97EEF16485 /* NiceContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D1EC36B4F99042FD866AFBBF26DA9B /* NiceContentCell.xib */; };
-		B1B656C5BC39B7D9F8576E5DE6AF9171 /* UIView+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B85C53CF39E28EB4E50E1E9DF6C6AA /* UIView+CornerRadius.swift */; };
-		B32733E22A1B26139ACAD612DC842527 /* NiceContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8AE3525274529932F6257ACC745BA /* NiceContentCell.swift */; };
+		9E11A5950AE6F84D91C9997EC738F4FD /* NiceSectionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850640ED6F23FE473F544BCA7987A928 /* NiceSectionStyle.swift */; };
+		A5DC4755AF6530AE7699440B971DBCA4 /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC9049D77F85060A59DF535FDF8E56C /* UIView+Nib.swift */; };
+		A60562E967A5BB6C74DAAA8B1B8F61D2 /* NiceContentAccessoryStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2214818D4B89C99E9FE5BE2A930E33 /* NiceContentAccessoryStyle.swift */; };
 		B91B6C7B89DEEEB7385018C59E2856C7 /* Pods-NiceTable_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8008F2CAC840B40772792D147841E7E6 /* Pods-NiceTable_Example-dummy.m */; };
 		BF95EFBE5C73D7142615E5D9BB6A83DA /* Pods-NiceTable_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 833CF1A815E2AEA652BF3966F15BE09E /* Pods-NiceTable_Tests-dummy.m */; };
-		D2F5DB0F7048EAE400F2128AB746A5D2 /* NiceTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ED1D589FD3D7F1768A53ED20C103B4 /* NiceTableCell.swift */; };
-		E08D178044D73F34BCBDD9C9BA71BE6F /* NiceDeletableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107E5314575BB017F0EFE6BA913CC7A1 /* NiceDeletableItem.swift */; };
-		E261ACB2AC0FA99BA299693098EFD7A7 /* NiceCollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB022D26B1D764F49CABD9319FC1660 /* NiceCollectionItem.swift */; };
-		E453E814556D454CA8B80BF4E7CE2028 /* NiceSwitchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB3DD9CC92838359382253850AAE4C5 /* NiceSwitchItem.swift */; };
-		EA228F7920561536D37961DFAD95DB54 /* UIView+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2B8BC4F8457C68B38DA41989FC61FE /* UIView+Bundle.swift */; };
-		EEDD0C35B4695B6A8711F284EEDBC01E /* NiceSectionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64FEE0BA89DD468C4EFB8A7CA03C041 /* NiceSectionStyle.swift */; };
-		FF62EFA19B3F5D4BBF5F8BCC4A6BDB14 /* NiceContentItemDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C817905170D77ED1CF38C92163D780 /* NiceContentItemDescription.swift */; };
+		C036D236D7EAD3CD07C011168EBA1CED /* NiceDeletableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1AA2EE59584AF695D0024111E06B67 /* NiceDeletableItem.swift */; };
+		C2470E6FFE0C8541E7D166FBECC8CB76 /* NiceTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17B37114650D689A6B2AA08681BD285E /* NiceTableViewController.xib */; };
+		C7830F1E1D4940403547BF25F8F6B39A /* NiceTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8C59B5629BBF39D9C7A11A17832F7 /* NiceTableView.swift */; };
+		CAEB71F1E062F402474D8ED8722C62FF /* NiceCollectionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1DE87CC40018DD117BDE4B1D1BC8C8 /* NiceCollectionSection.swift */; };
+		CE123A2E1BD3566791B616038A89764E /* NiceSwitchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9591631A51FC7F249437ACA80FEE97 /* NiceSwitchItem.swift */; };
+		D6D0BD1962B0BA17EAD375B813D8FCAC /* NiceCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC928B68C49561D7616E59FE6EE04A01 /* NiceCollectionViewController.xib */; };
+		E6CC4CF4F08E6C27A087D10B29E7E9C6 /* NiceContentItemRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8937264EF4BC37942191982592BC42C0 /* NiceContentItemRepresentable.swift */; };
+		E800279618206F194AEAD9BCAD1283EA /* NiceCollectionLoadMoreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B50445B6454A1F0DA08C14AFDBB47 /* NiceCollectionLoadMoreItem.swift */; };
+		E99B730454336043B0BF011916C6A59A /* NiceTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6930AC7C592B233186B27B16E91975DF /* NiceTableCell.swift */; };
+		E9F507AA804F1089AA9437174BE98931 /* UIView+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C329B2DDEA1051D871E435279E93FE4 /* UIView+Bundle.swift */; };
+		EFB8B721C764E0DA70B1DA60B788BF4E /* NiceContentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39DB9E80E2E2630086C782B6C659065 /* NiceContentStyle.swift */; };
+		F162F060DA1F46711782A4AEB611FE4D /* NiceTableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1869F38F4DEEA776D6547337DF8B5B6 /* NiceTableSection.swift */; };
+		F6347EC66A97122056CA427955765E37 /* NiceContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4747556820C4F4E0EE4829FAD0A7FFEA /* NiceContentCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3B43F267ECB9EB8843177249CDE1FBB7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AFFD20DDF0254BB37ABE254AB28BA52B;
-			remoteInfo = NiceTable;
-		};
-		DEB57DD352495EE913A0CB2118929E49 /* PBXContainerItemProxy */ = {
+		B626E321B4436A1A1EEAC51A9D266DCC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BDEA15ECEB6241F86C5BDA1C375B5A0F;
 			remoteInfo = "Pods-NiceTable_Example";
 		};
+		D60FB8AB1AA5677EF53DB026ABCBBA3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFFD20DDF0254BB37ABE254AB28BA52B;
+			remoteInfo = NiceTable;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02205BA80BEEA9B63425864300927352 /* NiceTable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NiceTable-umbrella.h"; sourceTree = "<group>"; };
+		016388629DBC6CDAAFDFBCB2690949B6 /* UICollectionView+ScrollTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UICollectionView+ScrollTo.swift"; sourceTree = "<group>"; };
 		03A75E32827CD3C91C99E2B3F089A06E /* Pods-NiceTable_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NiceTable_Tests-Info.plist"; sourceTree = "<group>"; };
-		107E5314575BB017F0EFE6BA913CC7A1 /* NiceDeletableItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceDeletableItem.swift; sourceTree = "<group>"; };
+		074F5682B7A6A170CD472AC80F46D7B1 /* NiceCollectionHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceCollectionHeaderView.swift; sourceTree = "<group>"; };
+		07F6265B4E4693101A5DA0DB185B83F4 /* NiceContentItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceContentItem.swift; sourceTree = "<group>"; };
+		0F3B50445B6454A1F0DA08C14AFDBB47 /* NiceCollectionLoadMoreItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceCollectionLoadMoreItem.swift; sourceTree = "<group>"; };
 		138C5F52B33C97E75A187AFF36A88304 /* Pods-NiceTable_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NiceTable_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		17E92384BE8C44A1FFC59127C7CAB83A /* NiceButtonCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = NiceButtonCell.xib; path = NiceTable/Resources/NiceButtonCell.xib; sourceTree = "<group>"; };
-		19E66CE145A9422A7FF3505FC2FF2C26 /* NiceCollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceCollectionViewController.swift; sourceTree = "<group>"; };
-		1B395A7D0D437EFFAF7F2E189202E61B /* NiceCollectionViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = NiceCollectionViewController.xib; path = NiceTable/Resources/NiceCollectionViewController.xib; sourceTree = "<group>"; };
+		17B37114650D689A6B2AA08681BD285E /* NiceTableViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = NiceTableViewController.xib; path = NiceTable/Resources/NiceTableViewController.xib; sourceTree = "<group>"; };
 		1E97E7C79C3D7C39F12BA24599BEED4D /* Pods-NiceTable_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NiceTable_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		213A533A89C4E9C7387FCEC820F52636 /* NiceTable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NiceTable.modulemap; sourceTree = "<group>"; };
-		2920745566D70B9478E9F163312F0DAF /* NiceTable-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NiceTable-Info.plist"; sourceTree = "<group>"; };
-		2B2B8BC4F8457C68B38DA41989FC61FE /* UIView+Bundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Bundle.swift"; sourceTree = "<group>"; };
-		2DB022D26B1D764F49CABD9319FC1660 /* NiceCollectionItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceCollectionItem.swift; sourceTree = "<group>"; };
-		30B40AC8E33DEE2D3D596961EE7AA8DA /* NiceTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceTableView.swift; sourceTree = "<group>"; };
-		33F8AE3525274529932F6257ACC745BA /* NiceContentCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceContentCell.swift; sourceTree = "<group>"; };
-		3B9FD41594D566E5B3E4E541B4B90CA9 /* NiceTableViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = NiceTableViewController.xib; path = NiceTable/Resources/NiceTableViewController.xib; sourceTree = "<group>"; };
-		3D2F4E7FF50466787A8B7E51263D3F57 /* NiceTable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NiceTable.release.xcconfig; sourceTree = "<group>"; };
+		216A4D3EA3F7D4008CE73B1D51FB9BED /* NiceTable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NiceTable.release.xcconfig; sourceTree = "<group>"; };
+		266A75E1CC94E19E13CD1D81171E4D24 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		2897BDD923D3EACCCF25A5ED3A047050 /* NiceTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceTableViewController.swift; sourceTree = "<group>"; };
+		32037F5B24DE21DD6157C9ECCE45DD3C /* NiceButtonCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceButtonCell.swift; sourceTree = "<group>"; };
+		3565ED856F21DC3EB6C99673AEE77384 /* NiceTableItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceTableItem.swift; sourceTree = "<group>"; };
+		3AC9049D77F85060A59DF535FDF8E56C /* UIView+Nib.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
+		3B94EA997CC51099FF2A739216D86C1D /* NiceButtonCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = NiceButtonCell.xib; path = NiceTable/Resources/NiceButtonCell.xib; sourceTree = "<group>"; };
+		3CE968AC98371697D9B504C084BB7E5C /* NiceTable-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NiceTable-Info.plist"; sourceTree = "<group>"; };
 		3F454F470B0D7A73F09BE096AEA1C1D2 /* Pods-NiceTable_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NiceTable_Example-umbrella.h"; sourceTree = "<group>"; };
+		40982AE300F75BEAE37FA7C4542C4950 /* NiceCollectionItemSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceCollectionItemSize.swift; sourceTree = "<group>"; };
+		4747556820C4F4E0EE4829FAD0A7FFEA /* NiceContentCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = NiceContentCell.xib; path = NiceTable/Resources/NiceContentCell.xib; sourceTree = "<group>"; };
 		474D94020D8B220F7DB9F57353A0A3AD /* Pods-NiceTable_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NiceTable_Example.release.xcconfig"; sourceTree = "<group>"; };
+		48A7038131FADE41E256D112DDD1FA29 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		496809F8607160B5F4AF08BD2E014ADC /* Pods-NiceTable_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NiceTable_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		4CEE22A73D16ABFF41C91C9156AF73BA /* NiceTable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NiceTable.h; path = NiceTable/Sources/NiceTable.h; sourceTree = "<group>"; };
+		4D97CA2A2607E574DBA6468B0246306F /* NiceCollectionItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceCollectionItem.swift; sourceTree = "<group>"; };
 		5055483B2A07FA8421B598EFC3EE5E9E /* Pods-NiceTable_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NiceTable_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		50837AE673356F6404F48282B16F4CAC /* NiceContentAccessoryStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceContentAccessoryStyle.swift; sourceTree = "<group>"; };
-		50EF7C744FE2B789BBC698DF6E465479 /* NiceCollectionHeaderView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = NiceCollectionHeaderView.xib; path = NiceTable/Resources/NiceCollectionHeaderView.xib; sourceTree = "<group>"; };
-		527D7FE513916B5421FF7C08CDAD7CC6 /* NiceKeyboardAvoidingTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceKeyboardAvoidingTableView.swift; sourceTree = "<group>"; };
 		538024C9A1227D69ED9F8060EA71A37B /* Pods-NiceTable_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NiceTable_Tests.modulemap"; sourceTree = "<group>"; };
+		5953D9934A467BB5435612F80A42F14B /* UIView+CornerRadius.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+CornerRadius.swift"; sourceTree = "<group>"; };
+		60C086C34A7DC81A7D85423AFDFD5BD1 /* NiceTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NiceTable.debug.xcconfig; sourceTree = "<group>"; };
+		641CBDFDF77F91D52260FF10C9F0ABD5 /* NiceCollectionLoadMoreItemCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceCollectionLoadMoreItemCell.swift; sourceTree = "<group>"; };
 		658299D9C1E1490DBC699B3C53B765D6 /* Pods-NiceTable_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NiceTable_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		673E9A719015EF54AE139A88B3D99A57 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		68B7E141E483038C1CD2279944ED6D8C /* UIView+Border.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
-		6CB8C11311135A62C01D5038DC8B1E5B /* NiceTable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NiceTable-prefix.pch"; sourceTree = "<group>"; };
+		6930AC7C592B233186B27B16E91975DF /* NiceTableCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceTableCell.swift; sourceTree = "<group>"; };
+		6C329B2DDEA1051D871E435279E93FE4 /* UIView+Bundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Bundle.swift"; sourceTree = "<group>"; };
 		6DE0D4F9811F00DEDEF4EA3853118C79 /* Pods-NiceTable_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NiceTable_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6E7E753956D3FF0CB64BF0977427E34F /* Pods-NiceTable_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NiceTable_Example"; path = Pods_NiceTable_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E85857CA3CD28820B937177C68802D8 /* NiceCollectionHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceCollectionHeaderView.swift; sourceTree = "<group>"; };
-		729BC03132C53F8EA221ED16C193E2FE /* NiceCollectionCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceCollectionCell.swift; sourceTree = "<group>"; };
+		6EBAE747916FD2256DF8C57AA8905FE8 /* NiceCollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceCollectionViewController.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		76D1EC36B4F99042FD866AFBBF26DA9B /* NiceContentCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = NiceContentCell.xib; path = NiceTable/Resources/NiceContentCell.xib; sourceTree = "<group>"; };
-		788675FC552774554442D311F8FD97C4 /* NiceContentItemRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceContentItemRepresentable.swift; sourceTree = "<group>"; };
-		78ED1D589FD3D7F1768A53ED20C103B4 /* NiceTableCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceTableCell.swift; sourceTree = "<group>"; };
-		7B322A908415964F912106E7809A8A54 /* NiceButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceButtonItem.swift; sourceTree = "<group>"; };
+		7B1DE87CC40018DD117BDE4B1D1BC8C8 /* NiceCollectionSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceCollectionSection.swift; sourceTree = "<group>"; };
+		7E9591631A51FC7F249437ACA80FEE97 /* NiceSwitchItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceSwitchItem.swift; sourceTree = "<group>"; };
 		8008F2CAC840B40772792D147841E7E6 /* Pods-NiceTable_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NiceTable_Example-dummy.m"; sourceTree = "<group>"; };
 		833CF1A815E2AEA652BF3966F15BE09E /* Pods-NiceTable_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NiceTable_Tests-dummy.m"; sourceTree = "<group>"; };
-		87068988DB2E70FEB1F4B1117BC6170C /* NiceTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NiceTable.debug.xcconfig; sourceTree = "<group>"; };
+		850640ED6F23FE473F544BCA7987A928 /* NiceSectionStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceSectionStyle.swift; sourceTree = "<group>"; };
+		8937264EF4BC37942191982592BC42C0 /* NiceContentItemRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceContentItemRepresentable.swift; sourceTree = "<group>"; };
 		8E1C1A723BD0FB6F7327BFBD06E912D7 /* Pods-NiceTable_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NiceTable_Example.modulemap"; sourceTree = "<group>"; };
-		95686B07A0479A4ED1C652A6F6735486 /* NiceContentItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceContentItem.swift; sourceTree = "<group>"; };
-		96DCA0A86B142C849D687B5DE28F040B /* NiceTable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NiceTable-dummy.m"; sourceTree = "<group>"; };
-		99485D6175607A620954B186D76773D8 /* NiceCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceCollectionView.swift; sourceTree = "<group>"; };
-		9CA681B343FA2C4185E8C1A1A16DF854 /* NiceTable.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = NiceTable.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		90BE45F8620452B60EDF6E66434405E5 /* NiceCollectionLoadMoreItemCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = NiceCollectionLoadMoreItemCell.xib; path = NiceTable/Resources/NiceCollectionLoadMoreItemCell.xib; sourceTree = "<group>"; };
+		92B441040839D193B4F6D22AAA53A762 /* NiceKeyboardAvoidingTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceKeyboardAvoidingTableView.swift; sourceTree = "<group>"; };
+		99CA6A8D2BE6C14D83CF54D38FD44DB1 /* NiceCollectionHeaderView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = NiceCollectionHeaderView.xib; path = NiceTable/Resources/NiceCollectionHeaderView.xib; sourceTree = "<group>"; };
+		9D740F3FB42BA728D2E90E050A6BAA8A /* NiceTable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NiceTable-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DC8C59B5629BBF39D9C7A11A17832F7 /* NiceTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceTableView.swift; sourceTree = "<group>"; };
+		9DE84960CC4F144E28CD4A76BC60BCBF /* NiceCollectionCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceCollectionCell.swift; sourceTree = "<group>"; };
 		A1FEB9C0E97EC3348F0A131A01E22B62 /* Pods-NiceTable_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NiceTable_Tests-umbrella.h"; sourceTree = "<group>"; };
-		A51AD7535C07D6386A927EAFA844FBF1 /* NiceTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceTableViewController.swift; sourceTree = "<group>"; };
-		AAB3DD9CC92838359382253850AAE4C5 /* NiceSwitchItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceSwitchItem.swift; sourceTree = "<group>"; };
+		A483BC2D776B9DF071001925844BD8DC /* NiceTable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NiceTable.h; path = NiceTable/Sources/NiceTable.h; sourceTree = "<group>"; };
+		AC2214818D4B89C99E9FE5BE2A930E33 /* NiceContentAccessoryStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceContentAccessoryStyle.swift; sourceTree = "<group>"; };
 		AC2708F534E1E8460B17A01DBD506647 /* Pods-NiceTable_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NiceTable_Example-frameworks.sh"; sourceTree = "<group>"; };
-		AE5D69AC309D8B769AA32867F6DB2952 /* CGFloat+Support.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CGFloat+Support.swift"; sourceTree = "<group>"; };
-		AEBDB4BA68F279210DEA6405A7710A82 /* NiceCollectionSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceCollectionSection.swift; sourceTree = "<group>"; };
+		AC9A2CEC4B85DF16B4F1FBF3457D72DB /* CGFloat+Support.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CGFloat+Support.swift"; sourceTree = "<group>"; };
+		AED232B998692601B3B8E48B0ED0DD75 /* NiceButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceButtonItem.swift; sourceTree = "<group>"; };
 		B44E1370E6A715F7B84CBE7DAB98C8DE /* Pods-NiceTable_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NiceTable_Tests"; path = Pods_NiceTable_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4C817905170D77ED1CF38C92163D780 /* NiceContentItemDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceContentItemDescription.swift; sourceTree = "<group>"; };
-		B4E6BF9395C4DD9C97288814FACD0ACD /* NiceTableItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceTableItem.swift; sourceTree = "<group>"; };
 		B978FD58E1A69B973ED293CE0B7A73C0 /* Pods-NiceTable_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NiceTable_Example-Info.plist"; sourceTree = "<group>"; };
-		BB6A0A61F5E6517B3C29C1E76127BBBA /* UIView+Nib.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
-		BEE1C12E2AE1B25D449F01AB981959B4 /* NiceTableSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceTableSection.swift; sourceTree = "<group>"; };
-		C64FEE0BA89DD468C4EFB8A7CA03C041 /* NiceSectionStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceSectionStyle.swift; sourceTree = "<group>"; };
-		D1B85C53CF39E28EB4E50E1E9DF6C6AA /* UIView+CornerRadius.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+CornerRadius.swift"; sourceTree = "<group>"; };
-		D20E7B48257CA6044CCB4B8E82543A5A /* NiceCollectionItemSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceCollectionItemSize.swift; sourceTree = "<group>"; };
-		D85DA39269F744D669B17B13F3D88144 /* NiceContentStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceContentStyle.swift; sourceTree = "<group>"; };
-		DA522AEF89C8DB2FEDDD6AF121753FF2 /* UICollectionView+ScrollTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UICollectionView+ScrollTo.swift"; sourceTree = "<group>"; };
-		DAE95DB0C0DBF3557A1EF53B1000ECC9 /* NiceButtonCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceButtonCell.swift; sourceTree = "<group>"; };
-		E2EC96BDAFCA842A5ABF17622EA9B024 /* NiceLookupItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceLookupItem.swift; sourceTree = "<group>"; };
-		E8E1C9732F94577F3076BE0C7F761ABB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		BA5DCF115054D7B978F5EA2D84EF898A /* NiceLookupItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceLookupItem.swift; sourceTree = "<group>"; };
+		BE2C8B07F0095E55FADAFAD584FC3E84 /* NiceTable.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = NiceTable.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C1869F38F4DEEA776D6547337DF8B5B6 /* NiceTableSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceTableSection.swift; sourceTree = "<group>"; };
+		C5465E3D3ACA49615938AE8E9D565637 /* NiceContentItemDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceContentItemDescription.swift; sourceTree = "<group>"; };
+		C9D7740C07C257DA2C607D8C249AFB32 /* NiceTable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NiceTable-prefix.pch"; sourceTree = "<group>"; };
+		D21885F1CE699B6C19A2F98A1DF900E7 /* NiceContentCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceContentCell.swift; sourceTree = "<group>"; };
+		E39DB9E80E2E2630086C782B6C659065 /* NiceContentStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceContentStyle.swift; sourceTree = "<group>"; };
+		E7431DEF8194CCCF2323E57CB9858FEA /* UIView+Border.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
+		E9626FEA8B05179640149125113C5E5B /* NiceCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceCollectionView.swift; sourceTree = "<group>"; };
+		EC928B68C49561D7616E59FE6EE04A01 /* NiceCollectionViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = NiceCollectionViewController.xib; path = NiceTable/Resources/NiceCollectionViewController.xib; sourceTree = "<group>"; };
+		EE1AA2EE59584AF695D0024111E06B67 /* NiceDeletableItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NiceDeletableItem.swift; sourceTree = "<group>"; };
 		EF23A0641CD5F6E238CBE878E6F7C072 /* NiceTable */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NiceTable; path = NiceTable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C761AFAD7A0019C63F62E858CCD560 /* Pods-NiceTable_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NiceTable_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F3C6FCBD382A3E5B62AC0BED802C8F6E /* NiceTable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NiceTable-umbrella.h"; sourceTree = "<group>"; };
+		FA01E037F45BB2CFDCA2D1EDCF4F9A62 /* NiceTable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NiceTable.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,59 +167,78 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7E9B7A8975027C4ABBEABA69D51DAB40 /* Frameworks */ = {
+		CE56DF13C0B9E39BCCFB9179A6B2C543 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C2CF95B38D4B3C2B8CC6F10D6D0BCA2 /* Foundation.framework in Frameworks */,
+				83F0414F5E1020FF8FF672D6FA3F45F0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02DB295F5A164BD8B10206B8F42672D5 /* Style */ = {
+		1045078AA2E69052EC9BC44FE4B16E1F /* Style */ = {
 			isa = PBXGroup;
 			children = (
-				D85DA39269F744D669B17B13F3D88144 /* NiceContentStyle.swift */,
-				C64FEE0BA89DD468C4EFB8A7CA03C041 /* NiceSectionStyle.swift */,
+				E39DB9E80E2E2630086C782B6C659065 /* NiceContentStyle.swift */,
+				850640ED6F23FE473F544BCA7987A928 /* NiceSectionStyle.swift */,
 			);
 			name = Style;
 			path = NiceTable/Sources/Style;
 			sourceTree = "<group>";
 		};
-		2A5B4EA09673A746E6372592FDB377A4 /* Pod */ = {
+		1B4227C5C5F4A30DBC1495A4CA87B262 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				673E9A719015EF54AE139A88B3D99A57 /* LICENSE */,
-				9CA681B343FA2C4185E8C1A1A16DF854 /* NiceTable.podspec */,
-				E8E1C9732F94577F3076BE0C7F761ABB /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		33163BD17726A81F170BFFC9B28C0FF8 /* TableView */ = {
-			isa = PBXGroup;
-			children = (
-				107E5314575BB017F0EFE6BA913CC7A1 /* NiceDeletableItem.swift */,
-				527D7FE513916B5421FF7C08CDAD7CC6 /* NiceKeyboardAvoidingTableView.swift */,
-				78ED1D589FD3D7F1768A53ED20C103B4 /* NiceTableCell.swift */,
-				B4E6BF9395C4DD9C97288814FACD0ACD /* NiceTableItem.swift */,
-				BEE1C12E2AE1B25D449F01AB981959B4 /* NiceTableSection.swift */,
-				30B40AC8E33DEE2D3D596961EE7AA8DA /* NiceTableView.swift */,
-				F63F6B822151983CFF91BE1F0E31315D /* Components */,
+				EE1AA2EE59584AF695D0024111E06B67 /* NiceDeletableItem.swift */,
+				92B441040839D193B4F6D22AAA53A762 /* NiceKeyboardAvoidingTableView.swift */,
+				6930AC7C592B233186B27B16E91975DF /* NiceTableCell.swift */,
+				3565ED856F21DC3EB6C99673AEE77384 /* NiceTableItem.swift */,
+				C1869F38F4DEEA776D6547337DF8B5B6 /* NiceTableSection.swift */,
+				9DC8C59B5629BBF39D9C7A11A17832F7 /* NiceTableView.swift */,
+				3075AF761F43F35F3CCBF8F5A2676B69 /* Components */,
 			);
 			name = TableView;
 			path = NiceTable/Sources/TableView;
 			sourceTree = "<group>";
 		};
-		47C5DA2803AF006D89EE0780F39DA733 /* NiceCollectionViewController */ = {
+		3075AF761F43F35F3CCBF8F5A2676B69 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				19E66CE145A9422A7FF3505FC2FF2C26 /* NiceCollectionViewController.swift */,
+				BA5DCF115054D7B978F5EA2D84EF898A /* NiceLookupItem.swift */,
+				7E9591631A51FC7F249437ACA80FEE97 /* NiceSwitchItem.swift */,
+				2897BDD923D3EACCCF25A5ED3A047050 /* NiceTableViewController.swift */,
+				44085B6D97AA9BBB044836E81545B5DE /* NiceButtonItem */,
+				5F97DA5EC24E8B1DA016A9E2013DF9B4 /* NiceContentItem */,
 			);
-			name = NiceCollectionViewController;
-			path = NiceCollectionViewController;
+			name = Components;
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3C417A92A0DC9021E537C19E0066D43F /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				9DE84960CC4F144E28CD4A76BC60BCBF /* NiceCollectionCell.swift */,
+				4D97CA2A2607E574DBA6468B0246306F /* NiceCollectionItem.swift */,
+				40982AE300F75BEAE37FA7C4542C4950 /* NiceCollectionItemSize.swift */,
+				7B1DE87CC40018DD117BDE4B1D1BC8C8 /* NiceCollectionSection.swift */,
+				E9626FEA8B05179640149125113C5E5B /* NiceCollectionView.swift */,
+				9C7B6818A2E8205ED7E05FC9974F3EDD /* Components */,
+				E3C6F718933F7562387B1C49E7780013 /* Extension */,
+			);
+			name = CollectionView;
+			path = NiceTable/Sources/CollectionView;
+			sourceTree = "<group>";
+		};
+		44085B6D97AA9BBB044836E81545B5DE /* NiceButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				32037F5B24DE21DD6157C9ECCE45DD3C /* NiceButtonCell.swift */,
+				AED232B998692601B3B8E48B0ED0DD75 /* NiceButtonItem.swift */,
+			);
+			name = NiceButtonItem;
+			path = NiceButtonItem;
 			sourceTree = "<group>";
 		};
 		4B66B2C4C6581C8B648B9F391C52803F /* Targets Support Files */ = {
@@ -225,43 +250,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		5095BB9DECDE13C67BA3403275C54C6B /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				DA522AEF89C8DB2FEDDD6AF121753FF2 /* UICollectionView+ScrollTo.swift */,
-			);
-			name = Extension;
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		5423B9DB62D5366B92177A58C4F97839 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				AE5D69AC309D8B769AA32867F6DB2952 /* CGFloat+Support.swift */,
-				68B7E141E483038C1CD2279944ED6D8C /* UIView+Border.swift */,
-				2B2B8BC4F8457C68B38DA41989FC61FE /* UIView+Bundle.swift */,
-				D1B85C53CF39E28EB4E50E1E9DF6C6AA /* UIView+CornerRadius.swift */,
-				BB6A0A61F5E6517B3C29C1E76127BBBA /* UIView+Nib.swift */,
-			);
-			name = Core;
-			path = NiceTable/Sources/Core;
-			sourceTree = "<group>";
-		};
-		56B6436C2C04D456B5CDE0F8D6F27127 /* CollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				729BC03132C53F8EA221ED16C193E2FE /* NiceCollectionCell.swift */,
-				2DB022D26B1D764F49CABD9319FC1660 /* NiceCollectionItem.swift */,
-				D20E7B48257CA6044CCB4B8E82543A5A /* NiceCollectionItemSize.swift */,
-				AEBDB4BA68F279210DEA6405A7710A82 /* NiceCollectionSection.swift */,
-				99485D6175607A620954B186D76773D8 /* NiceCollectionView.swift */,
-				FC4252FDED08994B4B2D79397DDC7F92 /* Components */,
-				5095BB9DECDE13C67BA3403275C54C6B /* Extension */,
-			);
-			name = CollectionView;
-			path = NiceTable/Sources/CollectionView;
-			sourceTree = "<group>";
-		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,12 +258,17 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		5C5981D0F067EBDBBFD7A40990A68152 /* Development Pods */ = {
+		5F97DA5EC24E8B1DA016A9E2013DF9B4 /* NiceContentItem */ = {
 			isa = PBXGroup;
 			children = (
-				A59B54E4BB5D9ED728FB5674AF6F416B /* NiceTable */,
+				AC2214818D4B89C99E9FE5BE2A930E33 /* NiceContentAccessoryStyle.swift */,
+				D21885F1CE699B6C19A2F98A1DF900E7 /* NiceContentCell.swift */,
+				07F6265B4E4693101A5DA0DB185B83F4 /* NiceContentItem.swift */,
+				C5465E3D3ACA49615938AE8E9D565637 /* NiceContentItemDescription.swift */,
+				8937264EF4BC37942191982592BC42C0 /* NiceContentItemRepresentable.swift */,
 			);
-			name = "Development Pods";
+			name = NiceContentItem;
+			path = NiceContentItem;
 			sourceTree = "<group>";
 		};
 		73C23ADC9B4A4A4B0F8DC2E3586EC0D5 /* Pods-NiceTable_Tests */ = {
@@ -292,16 +285,6 @@
 			);
 			name = "Pods-NiceTable_Tests";
 			path = "Target Support Files/Pods-NiceTable_Tests";
-			sourceTree = "<group>";
-		};
-		7AF96C15E43686F90BA91725EBEA4387 /* NiceButtonItem */ = {
-			isa = PBXGroup;
-			children = (
-				DAE95DB0C0DBF3557A1EF53B1000ECC9 /* NiceButtonCell.swift */,
-				7B322A908415964F912106E7809A8A54 /* NiceButtonItem.swift */,
-			);
-			name = NiceButtonItem;
-			path = NiceButtonItem;
 			sourceTree = "<group>";
 		};
 		853D1817D084B111BBA99A081499FB57 /* Pods-NiceTable_Example */ = {
@@ -321,6 +304,44 @@
 			path = "Target Support Files/Pods-NiceTable_Example";
 			sourceTree = "<group>";
 		};
+		8BF6265FC304462EEEC35DB2B706D0D2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA01E037F45BB2CFDCA2D1EDCF4F9A62 /* NiceTable.modulemap */,
+				9D740F3FB42BA728D2E90E050A6BAA8A /* NiceTable-dummy.m */,
+				3CE968AC98371697D9B504C084BB7E5C /* NiceTable-Info.plist */,
+				C9D7740C07C257DA2C607D8C249AFB32 /* NiceTable-prefix.pch */,
+				F3C6FCBD382A3E5B62AC0BED802C8F6E /* NiceTable-umbrella.h */,
+				60C086C34A7DC81A7D85423AFDFD5BD1 /* NiceTable.debug.xcconfig */,
+				216A4D3EA3F7D4008CE73B1D51FB9BED /* NiceTable.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/NiceTable";
+			sourceTree = "<group>";
+		};
+		94AECE86BA984730B2C90F7FE14BCB81 /* NiceCollectionLoadMoreCell */ = {
+			isa = PBXGroup;
+			children = (
+				0F3B50445B6454A1F0DA08C14AFDBB47 /* NiceCollectionLoadMoreItem.swift */,
+				641CBDFDF77F91D52260FF10C9F0ABD5 /* NiceCollectionLoadMoreItemCell.swift */,
+			);
+			name = NiceCollectionLoadMoreCell;
+			path = NiceCollectionLoadMoreCell;
+			sourceTree = "<group>";
+		};
+		9953D13C50E04760D70F410721ECCB91 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AC9A2CEC4B85DF16B4F1FBF3457D72DB /* CGFloat+Support.swift */,
+				E7431DEF8194CCCF2323E57CB9858FEA /* UIView+Border.swift */,
+				6C329B2DDEA1051D871E435279E93FE4 /* UIView+Bundle.swift */,
+				5953D9934A467BB5435612F80A42F14B /* UIView+CornerRadius.swift */,
+				3AC9049D77F85060A59DF535FDF8E56C /* UIView+Nib.swift */,
+			);
+			name = Core;
+			path = NiceTable/Sources/Core;
+			sourceTree = "<group>";
+		};
 		9A769A51E40B837D433E9FFD654783F8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,40 +352,40 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A59B54E4BB5D9ED728FB5674AF6F416B /* NiceTable */ = {
+		9C7B6818A2E8205ED7E05FC9974F3EDD /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				17E92384BE8C44A1FFC59127C7CAB83A /* NiceButtonCell.xib */,
-				50EF7C744FE2B789BBC698DF6E465479 /* NiceCollectionHeaderView.xib */,
-				1B395A7D0D437EFFAF7F2E189202E61B /* NiceCollectionViewController.xib */,
-				76D1EC36B4F99042FD866AFBBF26DA9B /* NiceContentCell.xib */,
-				4CEE22A73D16ABFF41C91C9156AF73BA /* NiceTable.h */,
-				3B9FD41594D566E5B3E4E541B4B90CA9 /* NiceTableViewController.xib */,
-				56B6436C2C04D456B5CDE0F8D6F27127 /* CollectionView */,
-				5423B9DB62D5366B92177A58C4F97839 /* Core */,
-				2A5B4EA09673A746E6372592FDB377A4 /* Pod */,
-				02DB295F5A164BD8B10206B8F42672D5 /* Style */,
-				DC0764E5A80C5A6B916B5AEF86CFF4F2 /* Support Files */,
-				33163BD17726A81F170BFFC9B28C0FF8 /* TableView */,
+				074F5682B7A6A170CD472AC80F46D7B1 /* NiceCollectionHeaderView.swift */,
+				6EBAE747916FD2256DF8C57AA8905FE8 /* NiceCollectionViewController.swift */,
+				94AECE86BA984730B2C90F7FE14BCB81 /* NiceCollectionLoadMoreCell */,
 			);
-			name = NiceTable;
-			path = ../..;
+			name = Components;
+			path = Components;
 			sourceTree = "<group>";
 		};
-		CB662D4FCFE51126778A859D082B56FE /* NiceCollectionHeaderView */ = {
+		A7F9362ED54072BBDFBE2D750F278C30 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6E85857CA3CD28820B937177C68802D8 /* NiceCollectionHeaderView.swift */,
+				D4CE223B7F958203FBB2BB5A71174329 /* NiceTable */,
 			);
-			name = NiceCollectionHeaderView;
-			path = NiceCollectionHeaderView;
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C866689D83270C81590023E950C1214A /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				48A7038131FADE41E256D112DDD1FA29 /* LICENSE */,
+				BE2C8B07F0095E55FADAFAD584FC3E84 /* NiceTable.podspec */,
+				266A75E1CC94E19E13CD1D81171E4D24 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				5C5981D0F067EBDBBFD7A40990A68152 /* Development Pods */,
+				A7F9362ED54072BBDFBE2D750F278C30 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				9A769A51E40B837D433E9FFD654783F8 /* Products */,
 				4B66B2C4C6581C8B648B9F391C52803F /* Targets Support Files */,
@@ -379,55 +400,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DC0764E5A80C5A6B916B5AEF86CFF4F2 /* Support Files */ = {
+		D4CE223B7F958203FBB2BB5A71174329 /* NiceTable */ = {
 			isa = PBXGroup;
 			children = (
-				213A533A89C4E9C7387FCEC820F52636 /* NiceTable.modulemap */,
-				96DCA0A86B142C849D687B5DE28F040B /* NiceTable-dummy.m */,
-				2920745566D70B9478E9F163312F0DAF /* NiceTable-Info.plist */,
-				6CB8C11311135A62C01D5038DC8B1E5B /* NiceTable-prefix.pch */,
-				02205BA80BEEA9B63425864300927352 /* NiceTable-umbrella.h */,
-				87068988DB2E70FEB1F4B1117BC6170C /* NiceTable.debug.xcconfig */,
-				3D2F4E7FF50466787A8B7E51263D3F57 /* NiceTable.release.xcconfig */,
+				3B94EA997CC51099FF2A739216D86C1D /* NiceButtonCell.xib */,
+				99CA6A8D2BE6C14D83CF54D38FD44DB1 /* NiceCollectionHeaderView.xib */,
+				90BE45F8620452B60EDF6E66434405E5 /* NiceCollectionLoadMoreItemCell.xib */,
+				EC928B68C49561D7616E59FE6EE04A01 /* NiceCollectionViewController.xib */,
+				4747556820C4F4E0EE4829FAD0A7FFEA /* NiceContentCell.xib */,
+				A483BC2D776B9DF071001925844BD8DC /* NiceTable.h */,
+				17B37114650D689A6B2AA08681BD285E /* NiceTableViewController.xib */,
+				3C417A92A0DC9021E537C19E0066D43F /* CollectionView */,
+				9953D13C50E04760D70F410721ECCB91 /* Core */,
+				C866689D83270C81590023E950C1214A /* Pod */,
+				1045078AA2E69052EC9BC44FE4B16E1F /* Style */,
+				8BF6265FC304462EEEC35DB2B706D0D2 /* Support Files */,
+				1B4227C5C5F4A30DBC1495A4CA87B262 /* TableView */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/NiceTable";
+			name = NiceTable;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		E28AF8478B3A96CA4E59E65908FFEC95 /* NiceContentItem */ = {
+		E3C6F718933F7562387B1C49E7780013 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				50837AE673356F6404F48282B16F4CAC /* NiceContentAccessoryStyle.swift */,
-				33F8AE3525274529932F6257ACC745BA /* NiceContentCell.swift */,
-				95686B07A0479A4ED1C652A6F6735486 /* NiceContentItem.swift */,
-				B4C817905170D77ED1CF38C92163D780 /* NiceContentItemDescription.swift */,
-				788675FC552774554442D311F8FD97C4 /* NiceContentItemRepresentable.swift */,
+				016388629DBC6CDAAFDFBCB2690949B6 /* UICollectionView+ScrollTo.swift */,
 			);
-			name = NiceContentItem;
-			path = NiceContentItem;
-			sourceTree = "<group>";
-		};
-		F63F6B822151983CFF91BE1F0E31315D /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				E2EC96BDAFCA842A5ABF17622EA9B024 /* NiceLookupItem.swift */,
-				AAB3DD9CC92838359382253850AAE4C5 /* NiceSwitchItem.swift */,
-				A51AD7535C07D6386A927EAFA844FBF1 /* NiceTableViewController.swift */,
-				7AF96C15E43686F90BA91725EBEA4387 /* NiceButtonItem */,
-				E28AF8478B3A96CA4E59E65908FFEC95 /* NiceContentItem */,
-			);
-			name = Components;
-			path = Components;
-			sourceTree = "<group>";
-		};
-		FC4252FDED08994B4B2D79397DDC7F92 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				CB662D4FCFE51126778A859D082B56FE /* NiceCollectionHeaderView */,
-				47C5DA2803AF006D89EE0780F39DA733 /* NiceCollectionViewController */,
-			);
-			name = Components;
-			path = Components;
+			name = Extension;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,12 +441,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		31113749BDEABE4775DAF46B5292C8CE /* Headers */ = {
+		27EA8CCB9C8B820F773FA3975BAF808C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BE22A1BDF5278A705D21D9D44B86363 /* NiceTable.h in Headers */,
-				5152978BDF4FD3AE77A134370F5C6A3A /* NiceTable-umbrella.h in Headers */,
+				4CF364C8423C5BF1139E3B0888985BCC /* NiceTable.h in Headers */,
+				8FBECA2B1E5AB5E83FBA5F13411A55BB /* NiceTable-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,12 +463,12 @@
 /* Begin PBXNativeTarget section */
 		AFFD20DDF0254BB37ABE254AB28BA52B /* NiceTable */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CCD1715937E8E22768CA6C08E2ED9FC1 /* Build configuration list for PBXNativeTarget "NiceTable" */;
+			buildConfigurationList = 3A546F0C8810458E652D9F1D091F0E0B /* Build configuration list for PBXNativeTarget "NiceTable" */;
 			buildPhases = (
-				31113749BDEABE4775DAF46B5292C8CE /* Headers */,
-				A1557496C13DFF6031F593194E7E333B /* Sources */,
-				7E9B7A8975027C4ABBEABA69D51DAB40 /* Frameworks */,
-				B92937A0D79F3FAF939537A7C21CF447 /* Resources */,
+				27EA8CCB9C8B820F773FA3975BAF808C /* Headers */,
+				F1BEA6870FA43E2DCF41698E6C771C12 /* Sources */,
+				CE56DF13C0B9E39BCCFB9179A6B2C543 /* Frameworks */,
+				DCAB55EFDFE2A796BCFE9CA9A78A08A6 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -491,7 +491,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				2A33EFC5D0ECA3D08FAE6ABB5BCD3799 /* PBXTargetDependency */,
+				D6CD02C599823796E166DF6098866F04 /* PBXTargetDependency */,
 			);
 			name = "Pods-NiceTable_Example";
 			productName = Pods_NiceTable_Example;
@@ -510,7 +510,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D862B5A5C37F1D153CD51425D55DB8E0 /* PBXTargetDependency */,
+				CC528A960A1ED512C17C5D85370733FF /* PBXTargetDependency */,
 			);
 			name = "Pods-NiceTable_Tests";
 			productName = Pods_NiceTable_Tests;
@@ -554,22 +554,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B92937A0D79F3FAF939537A7C21CF447 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				26FA9E8614B53A53B951B84CDC4AAADE /* NiceButtonCell.xib in Resources */,
-				7A9C3EBD0C44F677A376B966B54451BD /* NiceCollectionHeaderView.xib in Resources */,
-				05206501CE3E575B2DB4BBEBE75F14A6 /* NiceCollectionViewController.xib in Resources */,
-				A529BD9C839ADD628E0F5D97EEF16485 /* NiceContentCell.xib in Resources */,
-				3D769C4FFC52651074D3A92AEF7F8E48 /* NiceTableViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BA6510543AEA7C154E7258BA8C91A452 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAB55EFDFE2A796BCFE9CA9A78A08A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73403EFC910ABD16D77370A0C195A94A /* NiceButtonCell.xib in Resources */,
+				9A2D472E9CB6BDC688BEE48016A4FD62 /* NiceCollectionHeaderView.xib in Resources */,
+				8E21FA37645C508CB10E261209D0F61B /* NiceCollectionLoadMoreItemCell.xib in Resources */,
+				D6D0BD1962B0BA17EAD375B813D8FCAC /* NiceCollectionViewController.xib in Resources */,
+				F6347EC66A97122056CA427955765E37 /* NiceContentCell.xib in Resources */,
+				C2470E6FFE0C8541E7D166FBECC8CB76 /* NiceTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,96 +593,65 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1557496C13DFF6031F593194E7E333B /* Sources */ = {
+		F1BEA6870FA43E2DCF41698E6C771C12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09743CFC785D1051C4D47D4ED1264900 /* CGFloat+Support.swift in Sources */,
-				96633769376BB354D26E0E58AE0E1E30 /* NiceButtonCell.swift in Sources */,
-				62A82E03E7355F0326A8821B81A5D38C /* NiceButtonItem.swift in Sources */,
-				92CF45925EAB8EBF8EEA3516D59CD1DA /* NiceCollectionCell.swift in Sources */,
-				810518E6F5935763EFEB981864138437 /* NiceCollectionHeaderView.swift in Sources */,
-				E261ACB2AC0FA99BA299693098EFD7A7 /* NiceCollectionItem.swift in Sources */,
-				1D690AE7C9409B2B8A98E64EDD8FA044 /* NiceCollectionItemSize.swift in Sources */,
-				09835CE08F1031069DACC1D12FD642A8 /* NiceCollectionSection.swift in Sources */,
-				78D8A8442729C632BD2B6E844338672A /* NiceCollectionView.swift in Sources */,
-				97766A5E802133D7AD886FAB99F5D493 /* NiceCollectionViewController.swift in Sources */,
-				6E5FB20DB79ECC7F28E44E94F965B0B8 /* NiceContentAccessoryStyle.swift in Sources */,
-				B32733E22A1B26139ACAD612DC842527 /* NiceContentCell.swift in Sources */,
-				4A5DBAD8816EFF84950DEFC84C449964 /* NiceContentItem.swift in Sources */,
-				FF62EFA19B3F5D4BBF5F8BCC4A6BDB14 /* NiceContentItemDescription.swift in Sources */,
-				1F6251A9DF60AD7D7EA89B8459B781E6 /* NiceContentItemRepresentable.swift in Sources */,
-				4FABC14050A0050DACC1EC4BD07F261D /* NiceContentStyle.swift in Sources */,
-				E08D178044D73F34BCBDD9C9BA71BE6F /* NiceDeletableItem.swift in Sources */,
-				932ADB2A998A04708545B3E57908F4B5 /* NiceKeyboardAvoidingTableView.swift in Sources */,
-				638624871EA65E79EAB8EF7DC7B06384 /* NiceLookupItem.swift in Sources */,
-				EEDD0C35B4695B6A8711F284EEDBC01E /* NiceSectionStyle.swift in Sources */,
-				E453E814556D454CA8B80BF4E7CE2028 /* NiceSwitchItem.swift in Sources */,
-				8FEA6CE0E4FE6B60E689A407061011FD /* NiceTable-dummy.m in Sources */,
-				D2F5DB0F7048EAE400F2128AB746A5D2 /* NiceTableCell.swift in Sources */,
-				91D80A5823217699C1A158E165BC5351 /* NiceTableItem.swift in Sources */,
-				4B7AE30DCDE913894EF1F7B0018A3F7C /* NiceTableSection.swift in Sources */,
-				04E10C214DAF71BB3F8F8B9B94F719D2 /* NiceTableView.swift in Sources */,
-				21AD65BDCBE9C3D8C78BD9DC2F45EE15 /* NiceTableViewController.swift in Sources */,
-				959720D18D573E9017977DDAF1C53882 /* UICollectionView+ScrollTo.swift in Sources */,
-				2017E101D88E90BB2963D1E8D16AC501 /* UIView+Border.swift in Sources */,
-				EA228F7920561536D37961DFAD95DB54 /* UIView+Bundle.swift in Sources */,
-				B1B656C5BC39B7D9F8576E5DE6AF9171 /* UIView+CornerRadius.swift in Sources */,
-				6BD0B11D3F7E7F8E410C0F3564C172B0 /* UIView+Nib.swift in Sources */,
+				2EBD4C627A6CBE272EE4F19712408C2A /* CGFloat+Support.swift in Sources */,
+				081833AF858DF921759EB86D600037DC /* NiceButtonCell.swift in Sources */,
+				45C9B8E85CF95ABE92881ABDFE782080 /* NiceButtonItem.swift in Sources */,
+				219F2DD80A2AD780642BC26221EF92FD /* NiceCollectionCell.swift in Sources */,
+				742742B6D4A3A0D4311A065777A7BB73 /* NiceCollectionHeaderView.swift in Sources */,
+				83FB29C3246A10D76FDA9AD257697420 /* NiceCollectionItem.swift in Sources */,
+				72FC396F31BB983C6D36241093BF3B1F /* NiceCollectionItemSize.swift in Sources */,
+				E800279618206F194AEAD9BCAD1283EA /* NiceCollectionLoadMoreItem.swift in Sources */,
+				41D9AF59EFF8965F87892D1408CEDBF2 /* NiceCollectionLoadMoreItemCell.swift in Sources */,
+				CAEB71F1E062F402474D8ED8722C62FF /* NiceCollectionSection.swift in Sources */,
+				77558A7832F2374E62334359E5DB30EB /* NiceCollectionView.swift in Sources */,
+				885194C0057CE7A56B09F41066DBB53E /* NiceCollectionViewController.swift in Sources */,
+				A60562E967A5BB6C74DAAA8B1B8F61D2 /* NiceContentAccessoryStyle.swift in Sources */,
+				6707D8A84B3ADA8C3D3502CC97F78549 /* NiceContentCell.swift in Sources */,
+				32E6F1A51577BA31B46FD4087F948CE5 /* NiceContentItem.swift in Sources */,
+				1AE39FA76E5B39D35C93A3DADDE45075 /* NiceContentItemDescription.swift in Sources */,
+				E6CC4CF4F08E6C27A087D10B29E7E9C6 /* NiceContentItemRepresentable.swift in Sources */,
+				EFB8B721C764E0DA70B1DA60B788BF4E /* NiceContentStyle.swift in Sources */,
+				C036D236D7EAD3CD07C011168EBA1CED /* NiceDeletableItem.swift in Sources */,
+				1B54DDB9D976F2A7987C2F6D6BB7A14B /* NiceKeyboardAvoidingTableView.swift in Sources */,
+				6AE70FB10D9539EB63C5982F85D6828F /* NiceLookupItem.swift in Sources */,
+				9E11A5950AE6F84D91C9997EC738F4FD /* NiceSectionStyle.swift in Sources */,
+				CE123A2E1BD3566791B616038A89764E /* NiceSwitchItem.swift in Sources */,
+				2772A0C30CDB5137623AC979F71DF944 /* NiceTable-dummy.m in Sources */,
+				E99B730454336043B0BF011916C6A59A /* NiceTableCell.swift in Sources */,
+				18E5515BA938151DA0E466461248FADD /* NiceTableItem.swift in Sources */,
+				F162F060DA1F46711782A4AEB611FE4D /* NiceTableSection.swift in Sources */,
+				C7830F1E1D4940403547BF25F8F6B39A /* NiceTableView.swift in Sources */,
+				2632BFD8786DC54B431A5D24606CFBBC /* NiceTableViewController.swift in Sources */,
+				642873AA84649CD80A2D8BB14C7D6170 /* UICollectionView+ScrollTo.swift in Sources */,
+				4483D00F345E7C38B044447EBC06D03B /* UIView+Border.swift in Sources */,
+				E9F507AA804F1089AA9437174BE98931 /* UIView+Bundle.swift in Sources */,
+				55170FFB78574094671DCFF9B0D0B68C /* UIView+CornerRadius.swift in Sources */,
+				A5DC4755AF6530AE7699440B971DBCA4 /* UIView+Nib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2A33EFC5D0ECA3D08FAE6ABB5BCD3799 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = NiceTable;
-			target = AFFD20DDF0254BB37ABE254AB28BA52B /* NiceTable */;
-			targetProxy = 3B43F267ECB9EB8843177249CDE1FBB7 /* PBXContainerItemProxy */;
-		};
-		D862B5A5C37F1D153CD51425D55DB8E0 /* PBXTargetDependency */ = {
+		CC528A960A1ED512C17C5D85370733FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-NiceTable_Example";
 			target = BDEA15ECEB6241F86C5BDA1C375B5A0F /* Pods-NiceTable_Example */;
-			targetProxy = DEB57DD352495EE913A0CB2118929E49 /* PBXContainerItemProxy */;
+			targetProxy = B626E321B4436A1A1EEAC51A9D266DCC /* PBXContainerItemProxy */;
+		};
+		D6CD02C599823796E166DF6098866F04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NiceTable;
+			target = AFFD20DDF0254BB37ABE254AB28BA52B /* NiceTable */;
+			targetProxy = D60FB8AB1AA5677EF53DB026ABCBBA3A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1F635DF1B6304BAA941935EC35107EA9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D2F4E7FF50466787A8B7E51263D3F57 /* NiceTable.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NiceTable/NiceTable-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NiceTable/NiceTable-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NiceTable/NiceTable.modulemap";
-				PRODUCT_MODULE_NAME = NiceTable;
-				PRODUCT_NAME = NiceTable;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		2CE7C05FA1D624A2BAB230057A06EA39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1E97E7C79C3D7C39F12BA24599BEED4D /* Pods-NiceTable_Example.debug.xcconfig */;
@@ -785,38 +755,6 @@
 			};
 			name = Release;
 		};
-		8F7783532738E0FFE68409814A6501CC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87068988DB2E70FEB1F4B1117BC6170C /* NiceTable.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NiceTable/NiceTable-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NiceTable/NiceTable-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NiceTable/NiceTable.modulemap";
-				PRODUCT_MODULE_NAME = NiceTable;
-				PRODUCT_NAME = NiceTable;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -878,6 +816,38 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
+		};
+		B0364711343E80A24AA77A49F70C6DE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60C086C34A7DC81A7D85423AFDFD5BD1 /* NiceTable.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NiceTable/NiceTable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NiceTable/NiceTable-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NiceTable/NiceTable.modulemap";
+				PRODUCT_MODULE_NAME = NiceTable;
+				PRODUCT_NAME = NiceTable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -945,6 +915,39 @@
 			};
 			name = Debug;
 		};
+		EA2A72930F87879F60E9615F9A6E3939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 216A4D3EA3F7D4008CE73B1D51FB9BED /* NiceTable.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NiceTable/NiceTable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NiceTable/NiceTable-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NiceTable/NiceTable.modulemap";
+				PRODUCT_MODULE_NAME = NiceTable;
+				PRODUCT_NAME = NiceTable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		FFE888E72AF5E571522FFA6E0939ED1B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 474D94020D8B220F7DB9F57353A0A3AD /* Pods-NiceTable_Example.release.xcconfig */;
@@ -983,6 +986,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3A546F0C8810458E652D9F1D091F0E0B /* Build configuration list for PBXNativeTarget "NiceTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0364711343E80A24AA77A49F70C6DE0 /* Debug */,
+				EA2A72930F87879F60E9615F9A6E3939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1006,15 +1018,6 @@
 			buildConfigurations = (
 				2CE7C05FA1D624A2BAB230057A06EA39 /* Debug */,
 				FFE888E72AF5E571522FFA6E0939ED1B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CCD1715937E8E22768CA6C08E2ED9FC1 /* Build configuration list for PBXNativeTarget "NiceTable" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8F7783532738E0FFE68409814A6501CC /* Debug */,
-				1F635DF1B6304BAA941935EC35107EA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

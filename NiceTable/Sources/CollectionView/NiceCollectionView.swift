@@ -31,6 +31,14 @@ open class NiceCollectionView: UICollectionView {
         }
     }
     
+    public var loadMoreEnabled: Bool = false {
+        didSet {
+//            updateLoadMore()
+        }
+    }
+    
+    public var loadMoreHandler: (() -> Void)? = nil
+    
     public lazy var flowLayout: UICollectionViewFlowLayout = {
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.sectionInsetReference = .fromSafeArea
@@ -60,6 +68,23 @@ open class NiceCollectionView: UICollectionView {
         }
     }
         
+    private lazy var loadMoreSection: NiceCollectionSection = {
+        let item = NiceCollectionLoadMoreItem()
+        
+        var style = NiceSectionStyle.shared
+        style.isHeaderHidden = true
+        
+        return NiceCollectionSection([item], style: style)
+    }()
+    
+    private var _sections: [NiceCollectionSection] {
+        if loadMoreEnabled, !sections.isEmpty {
+            return sections + [loadMoreSection]
+        } else {
+            return sections
+        }
+    }
+    
     // MARK: - Life Cycle
     
     public override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
@@ -93,7 +118,7 @@ open class NiceCollectionView: UICollectionView {
     }
     
     private func registerCells() {
-        let items = sections.flatMap { $0.items }
+        let items = _sections.flatMap { $0.items }
         var new = items.filter { !registeredCells.contains($0.cellType.reuseIdentifier) }
         
         while !new.isEmpty {
@@ -114,7 +139,7 @@ open class NiceCollectionView: UICollectionView {
     }
     
     private func item(for indexPath: IndexPath) -> NiceCollectionItem {
-        return sections[indexPath.section].items[indexPath.row]
+        return _sections[indexPath.section].items[indexPath.row]
     }
     
     private func visualEffect(for indexPath: IndexPath) {
@@ -135,16 +160,15 @@ open class NiceCollectionView: UICollectionView {
 extension NiceCollectionView: UICollectionViewDataSource {
     
     public func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return sections.count
+        return _sections.count
     }
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return sections[section].items.count
+        return _sections[section].items.count
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let item = sections[indexPath.section].items[indexPath.row]
+        let item = item(for: indexPath)
         let cell = collectionView.dequeue(reusableCell: item.cellType, for: indexPath)
         cell.setup(item)
         
@@ -157,7 +181,7 @@ extension NiceCollectionView: UICollectionViewDataSource {
         case UICollectionView.elementKindSectionHeader:
             let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: NiceCollectionHeaderView.nNibName, for: indexPath) as! NiceCollectionHeaderView
 
-            headerView.setup(sections[indexPath.section])
+            headerView.setup(_sections[indexPath.section])
             
             return headerView
 
@@ -171,14 +195,25 @@ extension NiceCollectionView: UICollectionViewDataSource {
             
     }
     
+    public func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        guard loadMoreEnabled else { return }
+        
+        let item = item(for: indexPath)
+        
+        if item is NiceCollectionLoadMoreItem {
+            loadMoreHandler?()
+        }
+    }
+    
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        let style = sections[section].style
+        let style = _sections[section].style
         let height = CGSize(width: collectionView.frame.width, height: style.headerHeight)
         return style.isHeaderHidden ? .zero : height
     }
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
-        let style = sections[section].style
+        let style = _sections[section].style
         let height = CGSize(width: collectionView.frame.width, height: style.footerHeight)
         return style.isFooterHidden ? .zero : height
     }
