@@ -31,11 +31,7 @@ open class NiceCollectionView: UICollectionView {
         }
     }
     
-    public var loadMoreEnabled: Bool = false {
-        didSet {
-//            updateLoadMore()
-        }
-    }
+    public var loadMoreEnabled: Bool = false
     
     public var loadMoreHandler: (() -> Void)? = nil
     

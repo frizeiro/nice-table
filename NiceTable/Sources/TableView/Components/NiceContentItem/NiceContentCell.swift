@@ -42,6 +42,8 @@ public class NiceContentCell: NiceTableCell {
         subtitleLabel?.text = item.description.subtitle
         subtitleLabel?.isHidden = item.description.subtitle?.isEmpty ?? true
         
+        subtitleLabel?.font = item.description.style.subtitleFont
+        
         textBodyLabel?.text = item.description.text
         textBodyLabel?.isHidden = item.description.text?.isEmpty ?? true
         
@@ -54,18 +56,21 @@ public class NiceContentCell: NiceTableCell {
     // MARK: - Private Methods
     
     private func setupPresentation(_ item: NiceContentItem) {
-        
         switch item.description.style.presentation {
-        case .inline:
-            masterStackView?.axis = .horizontal
-            masterStackView?.alignment = .top
-            masterStackView?.distribution = .fillProportionally
-            textFooterStackView?.alignment = .trailing
-        case .topDown:
-            masterStackView?.axis = .vertical
-            masterStackView?.alignment = .fill
-            masterStackView?.distribution = .fill
-            textFooterStackView?.alignment = .fill
+            case .inline:
+                masterStackView?.axis = .horizontal
+                masterStackView?.alignment = .top
+                masterStackView?.distribution = .fillProportionally
+                textFooterStackView?.alignment = .trailing
+                textBodyLabel?.textAlignment = .right
+                footerLabel?.textAlignment = .right
+            case .topDown:
+                masterStackView?.axis = .vertical
+                masterStackView?.alignment = .fill
+                masterStackView?.distribution = .fill
+                textFooterStackView?.alignment = .fill
+                textBodyLabel?.textAlignment = .left
+                footerLabel?.textAlignment = .left
         }
     }
     

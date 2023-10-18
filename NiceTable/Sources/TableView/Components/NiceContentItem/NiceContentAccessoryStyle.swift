@@ -21,21 +21,21 @@ extension NiceContentAccessoryStyle {
     
     var accessoryType: UITableViewCell.AccessoryType {
         switch self {
-        case .lookup:
-            return .disclosureIndicator
-        default:
-            return .none
+            case .lookup:
+                return .disclosureIndicator
+            default:
+                return .none
         }
     }
     
     var accessoryView: UIView? {
         switch self {
-        case .custom(let view):
-            return view
-        case .image(let image):
-            return UIImageView(image: image)
-        default:
-            return nil
+            case .custom(let view):
+                return view
+            case .image(let image):
+                return UIImageView(image: image)
+            default:
+                return nil
         }
     }
     

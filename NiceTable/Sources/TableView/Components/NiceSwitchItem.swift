@@ -29,13 +29,19 @@ public class NiceSwitchItem: NiceContentItem {
     
     // MARK: - Life Cycle
     
-    public init(_ description: NiceContentItemRepresentable, value: Bool = false) {
+    public init(
+        _ description: NiceContentItemRepresentable,
+        value: Bool = false
+    ) {
         self.value = value
         super.init(description, accessoryStyle: .none)
         self.accessoryStyle = .custom(switchView)
     }
     
-    public init(_ description: NiceContentItemDescription, value: Bool = false) {
+    public init(
+        _ description: NiceContentItemDescription,
+        value: Bool = false
+    ) {
         self.value = value
         super.init(description, accessoryStyle: .none)
         self.accessoryStyle = .custom(switchView)

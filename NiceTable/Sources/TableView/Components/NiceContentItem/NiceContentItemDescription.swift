@@ -22,14 +22,15 @@ public class NiceContentItemDescription: NiceContentItemRepresentable {
     
     // MARK: - Life Cycle
     
-    public init(label: String? = nil,
-                subtitle: String? = nil,
-                text: String? = nil,
-                image: UIImage? = nil,
-                title: String? = nil,
-                footer: String? = nil,
-                style: NiceContentStyle = .shared) {
-        
+    public init(
+        label: String? = nil,
+        subtitle: String? = nil,
+        text: String? = nil,
+        image: UIImage? = nil,
+        title: String? = nil,
+        footer: String? = nil,
+        style: NiceContentStyle = .shared
+    ) {
         self.title = title
         self.label = label
         self.subtitle = subtitle
@@ -41,15 +42,24 @@ public class NiceContentItemDescription: NiceContentItemRepresentable {
     
     // MARK: - Public Methods
     
-    public static func description(label: String? = nil,
-                                   subtitle: String? = nil,
-                                   text: String? = nil,
-                                   image: UIImage? = nil,
-                                   title: String? = nil,
-                                   footer: String? = nil,
-                                   style: NiceContentStyle = .shared) -> NiceContentItemDescription {
-        
-        return NiceContentItemDescription(label: label, subtitle: subtitle, text: text, image: image, title: title, footer: footer, style: style)
+    public static func description(
+        label: String? = nil,
+        subtitle: String? = nil,
+        text: String? = nil,
+        image: UIImage? = nil,
+        title: String? = nil,
+        footer: String? = nil,
+        style: NiceContentStyle = .shared
+    ) -> NiceContentItemDescription {
+        return NiceContentItemDescription(
+            label: label,
+            subtitle: subtitle,
+            text: text,
+            image: image,
+            title: title,
+            footer: footer,
+            style: style
+        )
     }
     
 }

@@ -19,6 +19,8 @@ public struct NiceContentStyle {
     
     public var presentation: NiceContentStylePresentation = .topDown
     
+    public var subtitleFont: UIFont = .preferredFont(forTextStyle: .subheadline)
+    
 }
 
 public enum NiceContentStylePresentation {

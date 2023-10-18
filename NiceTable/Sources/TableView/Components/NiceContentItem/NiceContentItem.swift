@@ -25,12 +25,18 @@ open class NiceContentItem: NiceTableItem, NiceDeletableItem {
     
     // MARK: - Life Cycle
     
-    public init(_ description: NiceContentItemRepresentable, accessoryStyle: NiceContentAccessoryStyle = .none) {
+    public init(
+        _ description: NiceContentItemRepresentable,
+        accessoryStyle: NiceContentAccessoryStyle = .none
+    ) {
         self.description = description
         self.accessoryStyle = accessoryStyle
     }
     
-    public init(_ description: NiceContentItemDescription, accessoryStyle: NiceContentAccessoryStyle = .none) {
+    public init(
+        _ description: NiceContentItemDescription,
+        accessoryStyle: NiceContentAccessoryStyle = .none
+    ) {
         self.description = description
         self.accessoryStyle = accessoryStyle
     }
