@@ -15,12 +15,8 @@ class NiceCollectionLoadMoreItem: NiceCollectionItem {
         return NiceCollectionLoadMoreItemCell.self
     }
     
-    // MARK: - Life Cycle
-        
-    override init() {
-        super.init()
-        
-        size = .dynamicFixed(itemsPerRow: 1, fixedHeight: 40)
+    override var size: NiceCollectionItemSize? {
+        .dynamicFixed(itemsPerRow: 1, fixedHeight: 40)
     }
     
 }

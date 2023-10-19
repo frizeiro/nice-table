@@ -16,7 +16,9 @@ open class NiceCollectionItem {
         fatalError("\(type(of: self)).cellType needs to be overwritten.")
     }
     
-    public var size: NiceCollectionItemSize?
+    open var size: NiceCollectionItemSize? {
+        return nil
+    }
     
     public var tappedHandler: (() -> Void)?
     

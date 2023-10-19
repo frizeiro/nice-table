@@ -14,6 +14,7 @@ public enum NiceCollectionItemSize {
     case square(itemsPerRow: Int)
     case dynamicFixed(itemsPerRow: Int, fixedHeight: CGFloat)
     case dynamicProportional(itemsPerRow: Int, proportionalHeight: CGFloat)
+    case dynamicProportionalMax(itemsPerRow: Int, proportionalHeight: CGFloat, maxHeight: CGFloat)
     case estimatedFixed(width: CGFloat, fixedHeight: CGFloat)
     case estimatedProportional(width: CGFloat, proportionalHeight: CGFloat)
     
@@ -23,24 +24,27 @@ extension NiceCollectionItemSize {
     
     var description: String {
         switch self {
+                
+            case .fixed(let size):
+                return "fixed:\(size.width),\(size.height)"
+                
+            case .square(let itemsPerRow):
+                return "square:\(itemsPerRow)"
+                
+            case .dynamicFixed(let itemsPerRow, let fixedHeight):
+                return "dynamicFixed:\(itemsPerRow),\(fixedHeight)"
+                
+            case .dynamicProportional(let itemsPerRow, let proportionalHeight):
+                return "dynamicProportional:\(itemsPerRow),\(proportionalHeight)"
             
-        case .fixed(let size):
-            return "fixed:\(size.width),\(size.height)"
-            
-        case .square(let itemsPerRow):
-            return "square:\(itemsPerRow)"
-            
-        case .dynamicFixed(let itemsPerRow, let fixedHeight):
-            return "dynamicFixed:\(itemsPerRow),\(fixedHeight)"
-            
-        case .dynamicProportional(let itemsPerRow, let proportionalHeight):
-            return "dynamicProportional:\(itemsPerRow),\(proportionalHeight)"
-            
-        case .estimatedFixed(width: let width, fixedHeight: let fixedHeight):
-            return "estimatedFixed:\(width),\(fixedHeight)"
-            
-        case .estimatedProportional(width: let width, proportionalHeight: let proportionalHeight):
-            return "estimatedProportional:\(width),\(proportionalHeight)"
+            case .dynamicProportionalMax(let itemsPerRow, let proportionalHeight, let maxHeight):
+                return "dynamicProportionalMax:\(itemsPerRow),\(proportionalHeight),\(maxHeight)"
+                
+            case .estimatedFixed(width: let width, fixedHeight: let fixedHeight):
+                return "estimatedFixed:\(width),\(fixedHeight)"
+                
+            case .estimatedProportional(width: let width, proportionalHeight: let proportionalHeight):
+                return "estimatedProportional:\(width),\(proportionalHeight)"
         }
     }
     
@@ -50,29 +54,35 @@ extension NiceCollectionItemSize {
     
     func size(for collection: NiceCollectionView) -> CGSize {
         switch self {
-        case .fixed(let size):
-            return size
-            
-        case .square(let itemsPerRow):
-            let width = self.width(by: itemsPerRow, for: collection)
-            return CGSize(width: width, height: width)
-            
-        case .dynamicFixed(let itemsPerRow, let fixedHeight):
-            let width = self.width(by: itemsPerRow, for: collection)
-            return CGSize(width: width, height: fixedHeight)
-            
-        case .dynamicProportional(let itemsPerRow, let proportionalHeight):
-            let width = self.width(by: itemsPerRow, for: collection)
-            return CGSize(width: width, height: width * proportionalHeight)
-            
-        case .estimatedFixed(width: let width, fixedHeight: let fixedHeight):
-            let width = self.width(itemWidth: width, for: collection)
-            return CGSize(width: width, height: fixedHeight)
-            
-        case .estimatedProportional(width: let width, proportionalHeight: let proportionalHeight):
-            let width = self.width(itemWidth: width, for: collection)
-            return CGSize(width: width, height: width * proportionalHeight)
-            
+            case .fixed(let size):
+                return size
+                
+            case .square(let itemsPerRow):
+                let width = self.width(by: itemsPerRow, for: collection)
+                return CGSize(width: width, height: width)
+                
+            case .dynamicFixed(let itemsPerRow, let fixedHeight):
+                let width = self.width(by: itemsPerRow, for: collection)
+                return CGSize(width: width, height: fixedHeight)
+                
+            case .dynamicProportional(let itemsPerRow, let proportionalHeight):
+                let width = self.width(by: itemsPerRow, for: collection)
+                return CGSize(width: width, height: width * proportionalHeight)
+                
+            case .dynamicProportionalMax(let itemsPerRow, let proportionalHeight, let maxHeight):
+                let width = self.width(by: itemsPerRow, for: collection)
+                var heigh = width * proportionalHeight
+                heigh = heigh < maxHeight ? heigh : maxHeight
+                return CGSize(width: width, height: heigh)
+                
+            case .estimatedFixed(width: let width, fixedHeight: let fixedHeight):
+                let width = self.width(itemWidth: width, for: collection)
+                return CGSize(width: width, height: fixedHeight)
+                
+            case .estimatedProportional(width: let width, proportionalHeight: let proportionalHeight):
+                let width = self.width(itemWidth: width, for: collection)
+                return CGSize(width: width, height: width * proportionalHeight)
+                
         }
     }
     
