@@ -9,7 +9,5 @@ target 'NiceTable_Example' do
 
   target 'NiceTable_Tests' do
     inherit! :search_paths
-
-    
   end
 end

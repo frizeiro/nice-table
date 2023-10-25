@@ -17,11 +17,12 @@ open class NiceCollectionViewController: UIViewController {
     // MARK: - Life Cycle
 
     public init() {
-        super.init(nibName: String(describing: NiceCollectionViewController.self), bundle: Bundle(for: NiceCollectionViewController.self))
+        super.init(nibName: NiceCollectionViewController.nNibName, bundle: NiceCollectionViewController.nBundle)
     }
 
     public required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
+        NiceCollectionViewController.nNib.instantiate(withOwner: self)
     }
 
 }

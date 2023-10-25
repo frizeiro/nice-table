@@ -17,10 +17,16 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-NiceTable is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile:
+<!-- NiceTable is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'NiceTable'
+``` -->
+
+NiceTable is available through [CocoaPods](https://cocoapods.org). It's a previously version and it's not published on there yet. To install it for now, simply add de direct path installation to your Podfile:
+
+```ruby
+pod 'NiceTable', :git => 'git@github.com:frizeiro/nice-table.git', :branch => 'main'
 ```
 
 ## Author

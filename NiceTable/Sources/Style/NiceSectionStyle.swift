@@ -12,8 +12,8 @@ public struct NiceSectionStyle {
     
     public static let shared = NiceSectionStyle()
     
-    public var headerHeight: CGFloat = 40
-    public var footerHeight: CGFloat = 30
+    public var headerHeight: CGFloat = UITableView.automaticDimension
+    public var footerHeight: CGFloat = UITableView.automaticDimension
     
     public var isHeaderHidden: Bool = false
     public var isFooterHidden: Bool = true
