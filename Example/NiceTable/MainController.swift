@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainController.swift
 //  NiceTable
 //
 //  Created by Felipe Frizeiro on 10/13/2023.
@@ -9,7 +9,7 @@
 import UIKit
 import NiceTable
 
-class ViewController: NiceTableViewController {
+class MainController: NiceTableViewController {
     
     private lazy var sections: [NiceTableSection] = {
         [
@@ -66,6 +66,9 @@ class ViewController: NiceTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Examples"
+        navigationController?.navigationBar.prefersLargeTitles = true
         
         tableView?.sections = sections
     }
