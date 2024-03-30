@@ -1,7 +1,7 @@
 {
   "name": "NiceTable",
   "version": "0.1.0",
-  "summary": "A nice wrapper for TableView and CollectionView.",
+  "summary": "A nice wrapper for UITableView and UICollectionView.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/frizeiro/nice-table",
   "license": {
