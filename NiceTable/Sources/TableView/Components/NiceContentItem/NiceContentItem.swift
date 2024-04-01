@@ -12,7 +12,12 @@ open class NiceContentItem: NiceTableItem, NiceDeletableItem {
     
     // MARK: - Public Variables
     
-    public private(set) var description: NiceContentItemRepresentable
+    public var description: NiceContentItemRepresentable {
+        didSet {
+            updatedHandler?()
+        }
+    }
+    
     public internal(set) var accessoryStyle: NiceContentAccessoryStyle
     
     public var deletedHandler: (() -> Void)?
@@ -22,6 +27,10 @@ open class NiceContentItem: NiceTableItem, NiceDeletableItem {
     open override var cellType: NiceTableCell.Type {
         return NiceContentCell.self
     }
+    
+    // MARK: - Internal Variables
+    
+    var updatedHandler: (() -> Void)?
     
     // MARK: - Life Cycle
     

@@ -1,5 +1,5 @@
 PODS:
-  - NiceTable (0.1.0)
+  - NiceTable (0.2.0)
 
 DEPENDENCIES:
   - NiceTable (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  NiceTable: acd78ff853f7fbd3d9f91fbe253deaa86bd8586f
+  NiceTable: 8b854382ed9911492e220875148c5a6e8ed36969
 
 PODFILE CHECKSUM: d426667553b5424952ec45e5b88c450b5ec88a21
 

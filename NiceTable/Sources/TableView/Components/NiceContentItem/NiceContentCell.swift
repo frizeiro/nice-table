@@ -25,35 +25,52 @@ public class NiceContentCell: NiceTableCell {
     @IBOutlet private var primaryImageViewWidth: NSLayoutConstraint?
     @IBOutlet private var primaryImageViewHeight: NSLayoutConstraint?
     
+    private var item: NiceContentItem? {
+        return _item as? NiceContentItem
+    }
+    
     // MARK: - Public Methods
     
     public override func setup(_ item: NiceTableItem) {
-        guard let item = item as? NiceContentItem else { return }
+        _item = item
+    }
+    
+    public override func setupData() {
+        guard let item else { return }
         
         setupAccessoryStyle(item)
         setupPresentation(item)
-                
+        setupLabels(item)
+        setupPrimaryImageView(item)
+        
+        item.updatedHandler = { [weak self] in
+            self?.setupData()
+        }
+    }
+    
+    // MARK: - Private Methods
+    
+    private func setupLabels(_ item: NiceContentItem) {
         titleLabel?.text = item.description.title
         titleLabel?.isHidden = item.description.title?.isEmpty ?? true
+        titleLabel?.font = item.description.style.titleFont
         
         label?.text = item.description.label
         label?.isHidden = item.description.label?.isEmpty ?? true
+        label?.font = item.description.style.labelFont
         
         subtitleLabel?.text = item.description.subtitle
         subtitleLabel?.isHidden = item.description.subtitle?.isEmpty ?? true
-        
         subtitleLabel?.font = item.description.style.subtitleFont
         
         textBodyLabel?.text = item.description.text
         textBodyLabel?.isHidden = item.description.text?.isEmpty ?? true
+        textBodyLabel?.font = item.description.style.textFont
         
         footerLabel?.text = item.description.footer
         footerLabel?.isHidden = item.description.footer?.isEmpty ?? true
-        
-        setupPrimaryImageView(item)
+        footerLabel?.font = item.description.style.footerFont
     }
-    
-    // MARK: - Private Methods
     
     private func setupPresentation(_ item: NiceContentItem) {
         switch item.description.style.presentation {

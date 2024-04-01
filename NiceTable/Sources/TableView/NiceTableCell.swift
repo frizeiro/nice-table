@@ -12,6 +12,8 @@ import UIKit
 
 open class NiceTableCell: UITableViewCell {
     
+    // MARK: - Public Variables
+    
     public static var reuseIdentifier: String {
         return String(describing: self)
     }
@@ -20,9 +22,21 @@ open class NiceTableCell: UITableViewCell {
         return Self.reuseIdentifier
     }
     
+    // MARK: - Internal Variables
+    
+    var _item: NiceTableItem? {
+        didSet {
+            setupData()
+        }
+    }
+    
+    // MARK: - Public Methods
+    
     open func setup(_ item: NiceTableItem) {
         fatalError("\(type(of: self)).setup() needs to be overwritten.")
     }
+    
+    open func setupData() {}
     
 }
 
