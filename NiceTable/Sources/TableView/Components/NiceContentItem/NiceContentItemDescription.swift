@@ -8,6 +8,8 @@
 
 import UIKit
 
+public typealias Description = NiceContentItemDescription
+
 public class NiceContentItemDescription: NiceContentItemRepresentable {
     
     // MARK: - Public Variables
@@ -38,28 +40,6 @@ public class NiceContentItemDescription: NiceContentItemRepresentable {
         self.image = image
         self.footer = footer
         self.style = style
-    }
-    
-    // MARK: - Public Methods
-    
-    public static func description(
-        label: String? = nil,
-        subtitle: String? = nil,
-        text: String? = nil,
-        image: UIImage? = nil,
-        title: String? = nil,
-        footer: String? = nil,
-        style: NiceContentStyle = .shared
-    ) -> NiceContentItemDescription {
-        return NiceContentItemDescription(
-            label: label,
-            subtitle: subtitle,
-            text: text,
-            image: image,
-            title: title,
-            footer: footer,
-            style: style
-        )
     }
     
 }

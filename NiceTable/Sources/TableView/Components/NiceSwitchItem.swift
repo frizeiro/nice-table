@@ -38,15 +38,6 @@ public class NiceSwitchItem: NiceContentItem {
         self.accessoryStyle = .custom(switchView)
     }
     
-    public init(
-        _ description: NiceContentItemDescription,
-        value: Bool = false
-    ) {
-        self.value = value
-        super.init(description, accessoryStyle: .none)
-        self.accessoryStyle = .custom(switchView)
-    }
-    
     // MARK: - Private Methods
     
     @objc private func valueChanged() {

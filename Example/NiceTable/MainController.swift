@@ -24,6 +24,10 @@ class MainController: NiceTableViewController {
                 title: "Content Item without icon"
             ),
             NiceTableSection(
+                inputTextItems,
+                title: "Input Text Item"
+            ),
+            NiceTableSection(
                 switchItems,
                 title: "Switch Item"
             )
@@ -32,12 +36,12 @@ class MainController: NiceTableViewController {
     
     private lazy var contentCellIcon: [NiceTableItem] = {
         [
-            NiceContentItem(.description(
+            NiceContentItem(Description(
                 label: "Dogs",
                 text: "A dog is a domestic mammal of the family Canidae and the order Carnivora.",
                 image: image("dog.fill")
             )),
-            NiceContentItem(.description(
+            NiceContentItem(Description(
                 label: "Cats",
                 text: "Cats are graceful, carnivorous (meat-eating) mammals with sharp teeth and claws.",
                 image: image("cat.fill")
@@ -47,7 +51,7 @@ class MainController: NiceTableViewController {
     
     private lazy var contentCell: [NiceTableItem] = {
         [
-            NiceContentItem(.description(
+            NiceContentItem(Description(
                 label: "Aves",
                 subtitle: "Warm-blooded vertebrates",
                 text: "Birds are a group of warm-blooded vertebrates constituting the class Aves. Which is further divided into orders.",
@@ -57,15 +61,34 @@ class MainController: NiceTableViewController {
         ]
     }()
     
+    private lazy var inputTextItems: [NiceTableItem] = {
+        var item2: NiceInputTextItem!
+        
+        let item1 = NiceInputTextItem(
+            label: "Vehicle name",
+            placeholder: "Vehicle's full name",
+            footer: "For example: Ford Mustang Shelby GT500"
+        ) {
+            item2.setTextWithoutNotify($0)
+        }
+        
+        item2 = NiceInputTextItem(
+            label: "Vehicle name clone",
+            footer: "Should be able to set text from the first field without looping"
+        )
+        
+        return [item1, item2]
+    }()
+    
     private lazy var switchItems: [NiceTableItem] = {
         [
-            NiceSwitchItem(.description(
+            NiceSwitchItem(Description(
                 label: "Car",
                 text: "Do you have a car?",
                 image: image("car"),
                 footer: "A vehicle that has wheels, carries a small number of passengers, and is moved by an engine or a motor."
             )),
-            NiceSwitchItem(.description(
+            NiceSwitchItem(Description(
                 label: "Bus",
                 text: "Do you go work by bus?",
                 image: image("bus")

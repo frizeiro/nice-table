@@ -17,9 +17,16 @@ open class NiceTableItem {
     }
     
     public var tappedHandler: (() -> Void)?
+    public var updatedHandler: (() -> Void)?
     
     // MARK: - Life Cycle
     
     public init() {}
+    
+    // MARK: - Internal Methods
+    
+    func updateCell() {
+        updatedHandler?()
+    }
     
 }

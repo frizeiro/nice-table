@@ -28,22 +28,10 @@ open class NiceContentItem: NiceTableItem, NiceDeletableItem {
         return NiceContentCell.self
     }
     
-    // MARK: - Internal Variables
-    
-    var updatedHandler: (() -> Void)?
-    
     // MARK: - Life Cycle
     
     public init(
         _ description: NiceContentItemRepresentable,
-        accessoryStyle: NiceContentAccessoryStyle = .none
-    ) {
-        self.description = description
-        self.accessoryStyle = accessoryStyle
-    }
-    
-    public init(
-        _ description: NiceContentItemDescription,
         accessoryStyle: NiceContentAccessoryStyle = .none
     ) {
         self.description = description

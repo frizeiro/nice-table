@@ -19,11 +19,4 @@ public class NiceLookupItem: NiceContentItem {
         super.init(description, accessoryStyle: accessoryStyle)
     }
     
-    public override init(
-        _ description: NiceContentItemDescription,
-        accessoryStyle: NiceContentAccessoryStyle = .lookup
-    ) {
-        super.init(description, accessoryStyle: accessoryStyle)
-    }
-    
 }

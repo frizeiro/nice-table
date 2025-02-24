@@ -53,20 +53,6 @@ public class NiceStepperItem: NiceContentItem {
         self.accessoryStyle = .custom(stepper)
     }
     
-    public init(
-        _ description: NiceContentItemDescription,
-        value: Double = 0,
-        minValue: Double? = nil,
-        maxValue: Double? = nil
-    ) {
-        self.value = value
-        self.minValue = minValue
-        self.maxValue = maxValue
-        
-        super.init(description, accessoryStyle: .none)
-        self.accessoryStyle = .custom(stepper)
-    }
-    
     // MARK: - Private Methods
     
     @objc private func onValueChanged() {
