@@ -28,6 +28,10 @@ open class NiceInputTextItem: NiceTableItem {
         didSet { updateCell() }
     }
     
+    public var inputType: InputType {
+        didSet { updateCell() }
+    }
+    
     public var style: NiceContentStyle {
         didSet { updateCell() }
     }
@@ -51,6 +55,7 @@ open class NiceInputTextItem: NiceTableItem {
         text: String? = nil,
         placeholder: String? = nil,
         footer: String? = nil,
+        inputType: InputType = .default,
         style: NiceContentStyle = .shared,
         valueChanged: ((String) -> Void)? = nil
     ) {
@@ -58,6 +63,7 @@ open class NiceInputTextItem: NiceTableItem {
         self.text = text
         self.placeholder = placeholder
         self.footer = footer
+        self.inputType = inputType
         self.style = style
         self.valueChanged = valueChanged
     }

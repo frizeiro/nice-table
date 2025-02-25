@@ -14,15 +14,15 @@ public class NiceInputTextCell: NiceTableCell {
     
     private var action: (() -> Void)?
     
+    private var item: NiceInputTextItem? {
+        _item as? NiceInputTextItem
+    }
+    
     // MARK: - Outlets
     
     @IBOutlet private var label: UILabel?
     @IBOutlet private var textField: UITextField?
     @IBOutlet private var footerLabel: UILabel?
-    
-    private var item: NiceInputTextItem? {
-        return _item as? NiceInputTextItem
-    }
     
     // MARK: - Life Cycle
     
@@ -43,6 +43,7 @@ public class NiceInputTextCell: NiceTableCell {
         
         setupLabels(item)
         setupText(item)
+        setupInputType(item)
         
         item.updatedHandler = { [weak self] in
             self?.setupData()
@@ -66,6 +67,11 @@ public class NiceInputTextCell: NiceTableCell {
         textField?.placeholder = item.placeholder
     }
     
+    private func setupInputType(_ item: NiceInputTextItem) {
+        textField?.delegate = self
+        textField?.keyboardType = item.inputType.keyboardType
+    }
+    
     // MARK: - Private Methods
     
     @IBAction private func buttonTouchUpInside() {
@@ -74,6 +80,18 @@ public class NiceInputTextCell: NiceTableCell {
     
     @objc private func textFieldDidChange(_ textField: UITextField) {
         item?.valueChanged?(textField.text ?? "")
+    }
+    
+}
+
+extension NiceInputTextCell: UITextFieldDelegate {
+    
+    public func textField(
+        _ textField: UITextField,
+        shouldChangeCharactersIn range: NSRange,
+        replacementString string: String
+    ) -> Bool {
+        item?.inputType.shouldChangeCharacters(textField, replacementString: string) ?? true
     }
     
 }

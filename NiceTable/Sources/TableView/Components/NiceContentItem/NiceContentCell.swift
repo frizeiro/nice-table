@@ -12,6 +12,12 @@ public class NiceContentCell: NiceTableCell {
     
     // MARK: - Private Variables
     
+    private var item: NiceContentItem? {
+        _item as? NiceContentItem
+    }
+    
+    // MARK: Outlets
+    
     @IBOutlet private var titleLabel: UILabel?
     @IBOutlet private var label: UILabel?
     @IBOutlet private var subtitleLabel: UILabel?
@@ -24,10 +30,6 @@ public class NiceContentCell: NiceTableCell {
     
     @IBOutlet private var primaryImageViewWidth: NSLayoutConstraint?
     @IBOutlet private var primaryImageViewHeight: NSLayoutConstraint?
-    
-    private var item: NiceContentItem? {
-        return _item as? NiceContentItem
-    }
     
     // MARK: - Public Methods
     

@@ -77,7 +77,17 @@ class MainController: NiceTableViewController {
             footer: "Should be able to set text from the first field without looping"
         )
         
-        return [item1, item2]
+        let item3 = NiceInputTextItem(
+            label: "Integer only",
+            inputType: .integer
+        )
+        
+        let item4 = NiceInputTextItem(
+            label: "Decimal only",
+            inputType: .decimal
+        )
+        
+        return [item1, item2, item3, item4]
     }()
     
     private lazy var switchItems: [NiceTableItem] = {
