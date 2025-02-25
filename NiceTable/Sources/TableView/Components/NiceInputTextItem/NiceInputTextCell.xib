@@ -10,15 +10,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="132" id="rw3-ZD-53S" customClass="NiceInputTextCell" customModule="NiceTable" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="144" id="rw3-ZD-53S" customClass="NiceInputTextCell" customModule="NiceTable" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="144"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rw3-ZD-53S" id="T2T-F1-aV1">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
+                <rect key="frame" x="0.0" y="0.0" width="414" height="144"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8jU-Ap-vXl">
-                        <rect key="frame" x="16" y="10" width="382" height="112"/>
+                        <rect key="frame" x="16" y="10" width="382" height="124"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVL-vQ-ZwO">
                                 <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
@@ -26,13 +26,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Placeholder text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YOx-IH-S8h">
-                                <rect key="frame" x="0.0" y="24.5" width="382" height="67.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Placeholder text" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="YOx-IH-S8h">
+                                <rect key="frame" x="0.0" y="24.5" width="382" height="79.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="750" constant="40" id="NF7-JQ-dwe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Footer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaD-3R-En1">
-                                <rect key="frame" x="0.0" y="96" width="382" height="16"/>
+                                <rect key="frame" x="0.0" y="108" width="382" height="16"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                 <color key="textColor" systemColor="secondaryLabelColor"/>
                                 <nil key="highlightedColor"/>
@@ -52,7 +55,7 @@
                 <outlet property="label" destination="FVL-vQ-ZwO" id="GfW-4L-p9d"/>
                 <outlet property="textField" destination="YOx-IH-S8h" id="RHN-TL-G2g"/>
             </connections>
-            <point key="canvasLocation" x="-426.08695652173918" y="149.33035714285714"/>
+            <point key="canvasLocation" x="-426.08695652173918" y="153.34821428571428"/>
         </tableViewCell>
     </objects>
     <resources>

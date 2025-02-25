@@ -31,5 +31,6 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '11.0'
     
     s.source_files = 'NiceTable/Sources/**/*'
-    s.resources = 'NiceTable/Resources/**/*'    
+    s.resources = 'NiceTable/Resources/**/*'
+    s.dependency 'TPKeyboardAvoiding', '1.3.5'
 end

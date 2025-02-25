@@ -223,10 +223,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = SWAKFB6A2G;
 						LastSwiftMigration = "";
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = SWAKFB6A2G;
 						LastSwiftMigration = "";
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -301,10 +303,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NiceTable_Example/Pods-NiceTable_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/NiceTable/NiceTable.framework",
+				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NiceTable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -489,6 +493,7 @@
 			baseConfigurationReference = 62797A0B2B721E5AC568CB05 /* Pods-NiceTable_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SWAKFB6A2G;
 				INFOPLIST_FILE = NiceTable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -504,6 +509,7 @@
 			baseConfigurationReference = 377B4BE11BC379C8199B0428 /* Pods-NiceTable_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SWAKFB6A2G;
 				INFOPLIST_FILE = NiceTable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -518,6 +524,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B9964BCE40AFA6CA28907A56 /* Pods-NiceTable_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = SWAKFB6A2G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -540,6 +547,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A631AF181F2A8F804073A275 /* Pods-NiceTable_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = SWAKFB6A2G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

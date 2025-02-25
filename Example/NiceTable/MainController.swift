@@ -156,7 +156,7 @@ class MainController: NiceTableViewController {
         title = "Examples"
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        tableView?.sections = sections
+        tableView.sections = sections
     }
     
     // MARK: - Private Methods

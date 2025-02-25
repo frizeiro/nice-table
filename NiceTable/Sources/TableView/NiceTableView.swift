@@ -8,8 +8,9 @@
 
 import Foundation
 import UIKit
+import TPKeyboardAvoiding
 
-open class NiceTableView: NiceKeyboardAvoidingTableView {
+open class NiceTableView: TPKeyboardAvoidingTableView {
     
     // MARK: - Public Variables
     
