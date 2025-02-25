@@ -1,5 +1,5 @@
 //
-//  NiceInputTextItem.swift
+//  NiceSegmentedControlItem.swift
 //  NiceTable
 //
 //  Created by Felipe Frizeiro on 23/03/25.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class NiceInputTextItem: NiceTableItem {
+open class NiceSegmentedControlItem: NiceTableItem {
     
     // MARK: - Public Variables
     
@@ -20,7 +20,7 @@ open class NiceInputTextItem: NiceTableItem {
         didSet { updateCell() }
     }
     
-    public var placeholder: String? {
+    public var options: [SegmentedOption]? {
         didSet { updateCell() }
     }
     
@@ -28,61 +28,60 @@ open class NiceInputTextItem: NiceTableItem {
         didSet { updateCell() }
     }
     
-    public var inputType: InputType {
-        didSet { updateCell() }
-    }
-    
     public var style: NiceContentStyle {
         didSet { updateCell() }
     }
     
-    public var valueChanged: ((String) -> Void)?
+    public var indexChangedHandler: ((_ index: Int, _ id: String?) -> Void)?
+    
+    public var selectedIndex: Int {
+        didSet {
+            if oldValue != selectedIndex {
+                updateIndexHandler?()
+            }
+        }
+    }
     
     // MARK: - Overriden Variables
     
     open override var cellType: NiceTableCell.Type {
-        return NiceInputTextCell.self
+        return NiceSegmentedControlCell.self
     }
     
     // MARK: - Internal Variables
     
     var notifyChanges: Bool = true
+    var updateIndexHandler: (() -> Void)?
     
     // MARK: - Life Cycle
     
     public init(
         label: String? = nil,
         text: String? = nil,
-        placeholder: String? = nil,
+        options: [SegmentedOption]? = nil,
         footer: String? = nil,
-        inputType: InputType = .default,
+        selectedIndex: Int = -1,
         style: NiceContentStyle = .shared,
-        valueChanged: ((String) -> Void)? = nil
+        indexChangedHandler: ((_ index: Int, _ id: String?) -> Void)? = nil
     ) {
         self.label = label
         self.text = text
-        self.placeholder = placeholder
+        self.options = options
         self.footer = footer
-        self.inputType = inputType
+        self.selectedIndex = selectedIndex
         self.style = style
-        self.valueChanged = valueChanged
-    }
-    
-    // MARK: - Public Methods
-    
-    public func setTextWithoutNotify(_ text: String?) {
-        notifyChanges = false
-        self.text = text
-        updateCell()
-        notifyChanges = true
+        self.indexChangedHandler = indexChangedHandler
     }
     
     // MARK: - Internal Methods
     
-    func notifyChanges(_ text: String) {
-        guard notifyChanges else { return }
+    func notifyChanges(_ index: Int) {
+        guard selectedIndex != index else { return }
         
-        valueChanged?(text)
+        selectedIndex = index
+        
+        let option = options?[index].id
+        indexChangedHandler?(index, option)
     }
     
 }

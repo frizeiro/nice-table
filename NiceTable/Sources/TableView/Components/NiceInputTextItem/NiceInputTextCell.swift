@@ -74,12 +74,8 @@ public class NiceInputTextCell: NiceTableCell {
     
     // MARK: - Private Methods
     
-    @IBAction private func buttonTouchUpInside() {
-        action?()
-    }
-    
     @objc private func textFieldDidChange(_ textField: UITextField) {
-        item?.valueChanged?(textField.text ?? "")
+        item?.notifyChanges(textField.text ?? "")
     }
     
 }

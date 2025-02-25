@@ -24,6 +24,10 @@ class MainController: NiceTableViewController {
                 title: "Content Item without icon"
             ),
             NiceTableSection(
+                segmentedItems,
+                title: "Segmented Item"
+            ),
+            NiceTableSection(
                 inputTextItems,
                 title: "Input Text Item"
             ),
@@ -59,6 +63,44 @@ class MainController: NiceTableViewController {
                 footer: "Orders are groups of birds with similar characteristics"
             ))
         ]
+    }()
+    
+    private lazy var segmentedItems: [NiceTableItem] = {
+        let options1: [SegmentedOption] = [
+            .title(id: "car", title: "Car"),
+            .title(id: "bus", title: "Bus"),
+            .title(id: "lightrail", title: "Light rail")
+        ]
+        
+        let options2: [SegmentedOption] = [
+            .image(id: "airplane", image: image("airplane")!),
+            .image(id: "bus", image: image("bus")!),
+            .image(id: "motorcycle", image: image("motorcycle")!),
+            .image(id: "lightrail", image: image("lightrail")!),
+            .image(id: "car", image: image("car")!),
+            .image(id: "bicycle", image: image("bicycle")!)
+        ]
+        
+        let segmented1 = NiceSegmentedControlItem(
+            label: "Preferred vehicle",
+            options: options1,
+            footer: "Select your preferred transportation vehicle by title"
+        )
+        
+        let segmented2 = NiceSegmentedControlItem(
+            options: options2,
+            footer: "An image that represents the selected vehicle"
+        )
+        
+        segmented1.indexChangedHandler = { [weak self] index, option in
+            segmented2.selectedIndex = options2.firstIndex(where: { $0.id == option }) ?? -1
+        }
+        
+        segmented2.indexChangedHandler = { [weak self] index, option in
+            segmented1.selectedIndex = options1.firstIndex(where: { $0.id == option }) ?? -1
+        }
+        
+        return [segmented1, segmented2]
     }()
     
     private lazy var inputTextItems: [NiceTableItem] = {
