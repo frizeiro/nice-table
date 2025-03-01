@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'NiceTable'
-    s.version          = '0.2.0'
+    s.version          = '0.3.0'
     s.summary          = 'A nice wrapper for UITableView and UICollectionView.'
     
     # This description is used to generate tags and improve search results.
@@ -33,4 +33,26 @@ Pod::Spec.new do |s|
     s.source_files = 'NiceTable/Sources/**/*'
     s.resources = 'NiceTable/Resources/**/*'
     s.dependency 'TPKeyboardAvoiding', '1.3.5'
+    
+    s.subspec 'Core' do |sub|
+        sub.source_files = 'NiceTable/Core/Sources/**/*.*'
+        sub.resources = 'NiceTable/Core/Resources/**/*.*'
+        
+        sub.dependency 'TPKeyboardAvoiding', '1.3.5'
+    end
+    
+    s.subspec 'CollectionView' do |sub|
+        sub.source_files = 'NiceTable/CollectionView/Sources/**/*.*'
+        sub.resources = 'NiceTable/CollectionView/Resources/**/*.*'
+        
+        sub.dependency 'NiceTable/Core'
+    end
+    
+    s.subspec 'TableView' do |sub|
+        sub.source_files = 'NiceTable/TableView/Sources/**/*.*'
+        sub.resources = 'NiceTable/TableView/Resources/**/*.*'
+        
+        sub.dependency 'NiceTable/Core'
+    end
+    
 end

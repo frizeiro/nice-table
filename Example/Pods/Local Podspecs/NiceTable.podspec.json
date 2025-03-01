@@ -24,5 +24,33 @@
     "TPKeyboardAvoiding": [
       "1.3.5"
     ]
-  }
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "NiceTable/Core/Sources/**/*.*",
+      "resources": "NiceTable/Core/Resources/**/*.*",
+      "dependencies": {
+        "TPKeyboardAvoiding": [
+          "1.3.5"
+        ]
+      }
+    },
+    {
+      "name": "CollectionView",
+      "source_files": "NiceTable/CollectionView/Sources/**/*.*",
+      "resources": "NiceTable/CollectionView/Resources/**/*.*",
+      "dependencies": {
+        "NiceTable/Core": []
+      }
+    },
+    {
+      "name": "TableView",
+      "source_files": "NiceTable/TableView/Sources/**/*.*",
+      "resources": "NiceTable/TableView/Resources/**/*.*",
+      "dependencies": {
+        "NiceTable/Core": []
+      }
+    }
+  ]
 }

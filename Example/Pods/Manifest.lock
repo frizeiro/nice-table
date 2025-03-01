@@ -1,5 +1,16 @@
 PODS:
   - NiceTable (0.2.0):
+    - NiceTable/CollectionView (= 0.2.0)
+    - NiceTable/Core (= 0.2.0)
+    - NiceTable/TableView (= 0.2.0)
+    - TPKeyboardAvoiding (= 1.3.5)
+  - NiceTable/CollectionView (0.2.0):
+    - NiceTable/Core
+    - TPKeyboardAvoiding (= 1.3.5)
+  - NiceTable/Core (0.2.0):
+    - TPKeyboardAvoiding (= 1.3.5)
+  - NiceTable/TableView (0.2.0):
+    - NiceTable/Core
     - TPKeyboardAvoiding (= 1.3.5)
   - TPKeyboardAvoiding (1.3.5)
 
@@ -15,7 +26,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  NiceTable: d6fc6607069842495fb72ba9372631dff19ce3df
+  NiceTable: 2ed6b1c03910579502a836ea0c9a84ed592f3305
   TPKeyboardAvoiding: d55b3ea7b362540af8fcf36aa3ed2e87bf210cc6
 
 PODFILE CHECKSUM: d426667553b5424952ec45e5b88c450b5ec88a21
