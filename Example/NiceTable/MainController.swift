@@ -32,6 +32,10 @@ class MainController: NiceTableViewController {
                 title: "Input Text Item"
             ),
             NiceTableSection(
+                selectItems,
+                title: "Select Item"
+            ),
+            NiceTableSection(
                 switchItems,
                 title: "Switch Item"
             )
@@ -130,6 +134,17 @@ class MainController: NiceTableViewController {
         )
         
         return [item1, item2, item3, item4]
+    }()
+    
+    private lazy var selectItems: [NiceSelectItem] = {
+        [
+            NiceSelectItem(
+                label: "Some famous cars",
+                values: ["Ferrari 296 GTB", "Bugatti Chiron", "Porsche Singer DLS", "Lamborghini Sian FKP", "McLaren 720S", "Aston Martin DB11", "Jaguar F-Type", "Koenigsegg Jesko Absolut", "Rolls-Royce Phantom Drophead Coupe", "Mercedes-AMG GT"],
+                placeholder: "Select a car",
+                footer: "Many are called, few are chosen. These are some of the most famous cars ever made."
+            )
+        ]
     }()
     
     private lazy var switchItems: [NiceTableItem] = {
