@@ -24,6 +24,9 @@ public class NiceInputTextCell: NiceTableCell {
     @IBOutlet private var textField: UITextField?
     @IBOutlet private var footerLabel: UILabel?
     
+    @IBOutlet private var inputHeightConstraint: NSLayoutConstraint?
+    @IBOutlet private var inputStackView: UIStackView?
+    
     // MARK: - Life Cycle
     
     public override func awakeFromNib() {
@@ -44,6 +47,7 @@ public class NiceInputTextCell: NiceTableCell {
         setupLabels(item)
         setupText(item)
         setupInputType(item)
+        setupPresentation(item)
         
         item.updatedHandler = { [weak self] in
             self?.setupData()
@@ -76,6 +80,21 @@ public class NiceInputTextCell: NiceTableCell {
     
     @objc private func textFieldDidChange(_ textField: UITextField) {
         item?.notifyChanges(textField.text ?? "")
+    }
+    
+    private func setupPresentation(_ item: NiceInputTextItem) {
+        switch item.style.presentation {
+            case .inline:
+                textField?.borderStyle = .none
+                textField?.textAlignment = .right
+                inputStackView?.axis = .horizontal
+                inputHeightConstraint?.constant = 0
+            case .topDown:
+                textField?.borderStyle = .roundedRect
+                textField?.textAlignment = .left
+                inputStackView?.axis = .vertical
+                inputHeightConstraint?.constant = 44
+        }
     }
     
 }

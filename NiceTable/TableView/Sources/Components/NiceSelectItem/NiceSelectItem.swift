@@ -50,7 +50,6 @@ open class NiceSelectItem: NiceTableItem {
     
     // MARK: - Internal Variables
     
-    var notifyChanges: Bool = true
     var updateValueHandler: (() -> Void)?
     
     // MARK: - Life Cycle
@@ -75,8 +74,7 @@ open class NiceSelectItem: NiceTableItem {
     // MARK: - Internal Methods
     
     func notifyChanges(_ value: (any SelectValue)?) {
-        guard notifyChanges else { return }
-        
+        selectedValue = value
         valueChanged?(value)
     }
     

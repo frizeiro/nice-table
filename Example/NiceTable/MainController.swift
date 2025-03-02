@@ -133,18 +133,44 @@ class MainController: NiceTableViewController {
             inputType: .decimal
         )
         
-        return [item1, item2, item3, item4]
+        let item5 = NiceInputTextItem(
+            label: "Inline input",
+            placeholder: "Insert text here...",
+            style: .inline
+        )
+        
+        return [item1, item2, item3, item4, item5]
     }()
     
     private lazy var selectItems: [NiceSelectItem] = {
-        [
-            NiceSelectItem(
-                label: "Some famous cars",
-                values: ["Ferrari 296 GTB", "Bugatti Chiron", "Porsche Singer DLS", "Lamborghini Sian FKP", "McLaren 720S", "Aston Martin DB11", "Jaguar F-Type", "Koenigsegg Jesko Absolut", "Rolls-Royce Phantom Drophead Coupe", "Mercedes-AMG GT"],
-                placeholder: "Select a car",
-                footer: "Many are called, few are chosen. These are some of the most famous cars ever made."
-            )
+        let values = [
+            "Ferrari 296 GTB",
+            "Bugatti Chiron",
+            "Porsche Singer DLS",
+            "Lamborghini Sian FKP",
+            "McLaren 720S",
+            "Aston Martin DB11",
+            "Jaguar F-Type",
+            "Koenigsegg Jesko Absolut",
+            "Rolls-Royce Phantom Drophead Coupe",
+            "Mercedes-AMG GT"
         ]
+        
+        let item1 = NiceSelectItem(
+            label: "Some famous cars",
+            values: values,
+            placeholder: "Select a car",
+            footer: "Many are called, few are chosen. These are some of the most famous cars ever made."
+        )
+        
+        let item2 = NiceSelectItem(
+            label: "Inline select option",
+            values: values,
+            placeholder: "Select an option",
+            style: .inline
+        )
+        
+        return [item1, item2]
     }()
     
     private lazy var switchItems: [NiceTableItem] = {

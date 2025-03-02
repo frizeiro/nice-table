@@ -1,15 +1,15 @@
 PODS:
-  - NiceTable (0.2.0):
-    - NiceTable/CollectionView (= 0.2.0)
-    - NiceTable/Core (= 0.2.0)
-    - NiceTable/TableView (= 0.2.0)
+  - NiceTable (0.3.0):
+    - NiceTable/CollectionView (= 0.3.0)
+    - NiceTable/Core (= 0.3.0)
+    - NiceTable/TableView (= 0.3.0)
     - TPKeyboardAvoiding (= 1.3.5)
-  - NiceTable/CollectionView (0.2.0):
+  - NiceTable/CollectionView (0.3.0):
     - NiceTable/Core
     - TPKeyboardAvoiding (= 1.3.5)
-  - NiceTable/Core (0.2.0):
+  - NiceTable/Core (0.3.0):
     - TPKeyboardAvoiding (= 1.3.5)
-  - NiceTable/TableView (0.2.0):
+  - NiceTable/TableView (0.3.0):
     - NiceTable/Core
     - TPKeyboardAvoiding (= 1.3.5)
   - TPKeyboardAvoiding (1.3.5)
@@ -26,9 +26,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  NiceTable: 2ed6b1c03910579502a836ea0c9a84ed592f3305
+  NiceTable: ea3073982bfae66f13b6a7ab62fdc14334254c1b
   TPKeyboardAvoiding: d55b3ea7b362540af8fcf36aa3ed2e87bf210cc6
 
-PODFILE CHECKSUM: d426667553b5424952ec45e5b88c450b5ec88a21
+PODFILE CHECKSUM: ce4ac26115eb01da6b49030068a3d2e73020b81e
 
 COCOAPODS: 1.15.2

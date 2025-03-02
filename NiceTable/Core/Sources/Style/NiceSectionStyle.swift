@@ -19,3 +19,26 @@ public struct NiceSectionStyle {
     public var isFooterHidden: Bool = true
     
 }
+
+public extension NiceSectionStyle {
+    
+    static var noTitle: NiceSectionStyle {
+        var style: NiceSectionStyle = .shared
+        style.isHeaderHidden = true
+        return style
+    }
+    
+    static var withFooter: NiceSectionStyle {
+        var style: NiceSectionStyle = .shared
+        style.isFooterHidden = false
+        return style
+    }
+    
+    static var noTitleWithFooter: NiceSectionStyle {
+        var style: NiceSectionStyle = .shared
+        style.isHeaderHidden = true
+        style.isFooterHidden = false
+        return style
+    }
+    
+}

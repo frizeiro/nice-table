@@ -20,7 +20,7 @@ class SelectTextField: UITextField {
             setupSelectedValue(selectedValue)
         }
     }
-
+    
     // MARK: - Private Variables
     
     private lazy var pickerView: UIPickerView = {
@@ -30,6 +30,13 @@ class SelectTextField: UITextField {
         
         return pickerView
     }()
+        
+    private let flexSpace = UIBarButtonItem(
+        barButtonSystemItem: .flexibleSpace,
+        target: nil,
+        action: nil
+    )
+
     
     private lazy var doneButton = UIBarButtonItem(
         barButtonSystemItem: .done,
@@ -40,7 +47,7 @@ class SelectTextField: UITextField {
     private lazy var toolbar: UIToolbar = {
         let toolbar = UIToolbar()
         toolbar.sizeToFit()
-        toolbar.setItems([doneButton], animated: false)
+        toolbar.setItems([flexSpace, doneButton], animated: false)
         
         return toolbar
     }()
@@ -57,23 +64,60 @@ class SelectTextField: UITextField {
         setupUI()
     }
     
+    // MARK: - Internal Methods
+    
+    func removeIconMargin() {
+        rightView = dropDownIcon(marginRight: 0)
+    }
+    
+    func restoreIconMargin() {
+        rightView = dropDownIcon()
+    }
+    
     // MARK: - Private Methods
     
     private func setupUI() {
         inputView = pickerView
         inputAccessoryView = toolbar
+        
+        rightView = dropDownIcon()
+        rightViewMode = .always
     }
     
     private func setupSelectedValue(_ value: SelectValue?) {
-        guard let value,
-              let row = values.firstIndex(where: { $0.id == value.id }),
-              row != pickerView.selectedRow(inComponent: 1) else { return }
+        guard let value else {
+            select(row: 0)
+            return
+        }
         
-        pickerView.selectRow(row, inComponent: 1, animated: true)
+        guard let row = values.firstIndex(where: { $0.id == value.id }),
+              row != selectedRow() else { return }
+        
+        select(row: row)
+    }
+    
+    private func dropDownIcon(marginRight: CGFloat = 7) -> UIView {
+        let icon = UIImageView(image: .chevronUpDown)
+        icon.tintColor = .lightGray
+        icon.frame = CGRect(x: 7, y: 7, width: 16, height: 16)
+        icon.contentMode = .scaleAspectFit
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(rightViewTapped))
+        
+        let container = UIView(frame: CGRect(x: 0, y: 0, width: 23 + marginRight, height: 30))
+        container.addSubview(icon)
+        container.isUserInteractionEnabled = true
+        container.addGestureRecognizer(tapGesture)
+        
+        return container
     }
     
     @objc private func done() {
         resignFirstResponder()
+    }
+    
+    @objc private func rightViewTapped() {
+        becomeFirstResponder()
     }
     
 }
@@ -116,6 +160,14 @@ extension SelectTextField: UIPickerViewDelegate {
             valueChangedHandler?(value)
             text = value?.text
         }
+    }
+    
+    private func select(row: Int) {
+        pickerView.selectRow(row, inComponent: 0, animated: true)
+    }
+    
+    private func selectedRow() -> Int {
+        pickerView.selectedRow(inComponent: 0)
     }
     
 }

@@ -23,6 +23,19 @@ public class NiceSelectCell: NiceTableCell {
     @IBOutlet private var label: UILabel?
     @IBOutlet private var selectTextField: SelectTextField?
     @IBOutlet private var footerLabel: UILabel?
+    
+    @IBOutlet private var inputHeightConstraint: NSLayoutConstraint?
+    @IBOutlet private var inputStackView: UIStackView?
+    
+    // MARK: - Life Cycle
+    
+    public override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        selectTextField?.valueChangedHandler = { [weak self] selected in
+            self?.item?.notifyChanges(selected)
+        }
+    }
         
     // MARK: - Public Methods
     
@@ -35,9 +48,14 @@ public class NiceSelectCell: NiceTableCell {
         
         setupLabels(item)
         setupValue(item)
+        setupPresentation(item)
         
         item.updatedHandler = { [weak self] in
             self?.setupData()
+        }
+        
+        item.updateValueHandler = { [weak self] in
+            self?.setupValue(item)
         }
     }
     
@@ -57,8 +75,25 @@ public class NiceSelectCell: NiceTableCell {
         selectTextField?.placeholder = item.placeholder
         selectTextField?.text = item.selectedValue?.text
         
-        selectTextField?.values = [item.placeholder ?? ""] + (item.values ?? [])
+        selectTextField?.values = [""] + (item.values ?? [])
         selectTextField?.selectedValue = item.selectedValue
+    }
+    
+    private func setupPresentation(_ item: NiceSelectItem) {
+        switch item.style.presentation {
+            case .inline:
+                selectTextField?.borderStyle = .none
+                selectTextField?.textAlignment = .right
+                selectTextField?.removeIconMargin()
+                inputStackView?.axis = .horizontal
+                inputHeightConstraint?.constant = 0
+            case .topDown:
+                selectTextField?.borderStyle = .roundedRect
+                selectTextField?.textAlignment = .left
+                selectTextField?.restoreIconMargin()
+                inputStackView?.axis = .vertical
+                inputHeightConstraint?.constant = 44
+        }
     }
     
 }

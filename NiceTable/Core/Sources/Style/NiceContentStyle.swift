@@ -8,6 +8,11 @@
 
 import UIKit
 
+public enum NiceContentStylePresentation {
+    case inline
+    case topDown
+}
+
 public struct NiceContentStyle {
     
     public static let shared = NiceContentStyle()
@@ -24,9 +29,15 @@ public struct NiceContentStyle {
     public var subtitleFont: UIFont = .preferredFont(forTextStyle: .subheadline)
     public var textFont: UIFont = .preferredFont(forTextStyle: .body)
     public var footerFont: UIFont = .preferredFont(forTextStyle: .footnote)
+    
 }
 
-public enum NiceContentStylePresentation {
-    case inline
-    case topDown
+public extension NiceContentStyle {
+    
+    static var inline: NiceContentStyle {
+        var style: NiceContentStyle = .shared
+        style.presentation = .inline
+        return style
+    }
+    
 }

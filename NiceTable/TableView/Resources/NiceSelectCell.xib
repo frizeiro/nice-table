@@ -20,20 +20,25 @@
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8jU-Ap-vXl">
                         <rect key="frame" x="16" y="10" width="382" height="124"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVL-vQ-ZwO">
-                                <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Placeholder text" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YOx-IH-S8h" customClass="SelectTextField" customModule="NiceTable" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="24.5" width="382" height="79.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="750" constant="40" id="NF7-JQ-dwe"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="27L-Yv-vbN">
+                                <rect key="frame" x="0.0" y="0.0" width="382" height="104"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVL-vQ-ZwO">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Placeholder text" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YOx-IH-S8h" customClass="SelectTextField" customModule="NiceTable" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="382" height="79.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="750" constant="40" id="NF7-JQ-dwe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Footer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaD-3R-En1">
                                 <rect key="frame" x="0.0" y="108" width="382" height="16"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
@@ -52,6 +57,8 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="footerLabel" destination="OaD-3R-En1" id="2ET-JW-Z5s"/>
+                <outlet property="inputHeightConstraint" destination="NF7-JQ-dwe" id="UPd-Ii-Paa"/>
+                <outlet property="inputStackView" destination="27L-Yv-vbN" id="ok9-co-SXC"/>
                 <outlet property="label" destination="FVL-vQ-ZwO" id="zvn-4n-3sN"/>
                 <outlet property="selectTextField" destination="YOx-IH-S8h" id="f3G-qX-3B9"/>
             </connections>

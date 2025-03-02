@@ -12,7 +12,9 @@ open class NiceTableViewController: UIViewController {
     
     // MARK: - Public Variables
     
-    public var style: UITableView.Style = .grouped
+    open var style: UITableView.Style {
+        .grouped
+    }
     
     public lazy var tableView: NiceTableView = {
         NiceTableView(frame: view.frame, style: style)
